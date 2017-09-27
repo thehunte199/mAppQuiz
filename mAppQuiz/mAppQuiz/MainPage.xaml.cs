@@ -13,5 +13,12 @@ namespace mAppQuiz
         {
             InitializeComponent();
         }
+        async void OnLoginClick(object sender, EventArgs e)
+        {
+            if (await this.DisplayAlert("Alert", "You have clicked Login", "Ok", "Cancel"))
+            {
+
+            }
+        }
     }
 }
