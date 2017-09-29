@@ -24,10 +24,7 @@ namespace mAppQuiz
 
         async void OnSignUpClick(object sender, EventArgs e)
         {
-            if (await this.DisplayAlert("Woop", "Sign Up Button Clicked", "Yeah", "Duh"))
-            {
-
-            }
+            await Navigation.PushAsync(new SignUpPage());
         }
     }
 }

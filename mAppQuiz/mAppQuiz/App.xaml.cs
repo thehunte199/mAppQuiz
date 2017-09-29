@@ -13,7 +13,7 @@ namespace mAppQuiz
         {
             InitializeComponent();
 
-            MainPage = new mAppQuiz.MainPage();
+            MainPage = new NavigationPage(new mAppQuiz.MainPage());
         }
 
         protected override void OnStart()
