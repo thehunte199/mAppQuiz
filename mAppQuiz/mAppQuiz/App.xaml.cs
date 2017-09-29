@@ -9,11 +9,18 @@ namespace mAppQuiz
 {
     public partial class App : Application
     {
+        public NavigationPage NavigationPage { get; private set; }
+
+
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new mAppQuiz.MainPage());
+            var menuPage = new MenuPage();
+            NavigationPage = new NavigationPage(new MainPage());
+            var rootPage = new RootPage();
+            rootPage.Master = menuPage;
+            rootPage.Detail = NavigationPage;
+            MainPage = rootPage;
         }
 
         protected override void OnStart()
