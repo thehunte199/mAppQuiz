@@ -4,7 +4,17 @@
              x:Class="mAppQuiz.SignUpPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="It's just a prank bro!" />
+            <Label Text="First Name: " />
+            <Entry x:Name="FName" IsVisible="True"/>
+            <Label Text="Last Name: "/>
+            <Entry x:Name="LName" IsVisible="True"/>
+            <Label Text="Email: "/>
+            <Entry x:Name="Email" IsVisible="True"/>
+            <Label Text="Username: "/>
+            <Entry Text="Username" IsVisible="True"/>
+            <Label Text="Password" />
+            <Entry x:Name="passwordEntry" Placeholder="must be greater than 8 characters" IsPassword="true" />
+            <Button Text="Sign Up" Clicked="OnSignUp" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

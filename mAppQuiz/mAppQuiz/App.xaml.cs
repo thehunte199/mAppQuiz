@@ -10,7 +10,7 @@ namespace mAppQuiz
     public partial class App : Application
     {
         public NavigationPage NavigationPage { get; private set; }
-
+        private HashSet<UserInfo> accountInfo = new HashSet<UserInfo>();
 
         public App()
         {

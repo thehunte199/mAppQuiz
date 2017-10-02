@@ -16,5 +16,12 @@ namespace mAppQuiz
 		{
 			InitializeComponent ();
 		}
+
+        async void OnSignUp(object sender, EventArgs e)
+        {
+            UserInfo entered = new UserInfo((String) FName, (String) LName, 
+            
+            await this.DisplayAlert("Signed up", "", "", "");
+        }
 	}
 }
