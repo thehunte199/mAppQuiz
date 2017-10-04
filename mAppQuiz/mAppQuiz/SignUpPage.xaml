@@ -9,7 +9,7 @@
             <Label Text="Last Name: "/>
             <Entry x:Name="LName" IsVisible="True"/>
             <Label Text="Email: "/>
-            <Entry x:Name="Email" IsVisible="True"/>
+            <Entry x:Name="Email" IsVisible="True" Keyboard="Email"/>
             <Label Text="Username: "/>
             <Entry Text="Username" IsVisible="True"/>
             <Label Text="Password" />
