@@ -9,18 +9,19 @@ namespace mAppQuiz
 {
     public partial class App : Application
     {
-        public NavigationPage NavigationPage { get; private set; }
+        public NavigationPage TopNavigation { get; private set; }
 
 
         public App()
         {
             InitializeComponent();
-            var menuPage = new MenuPage();
-            NavigationPage = new NavigationPage(new MainPage());
-            var rootPage = new RootPage();
-            rootPage.Master = menuPage;
-            rootPage.Detail = NavigationPage;
-            MainPage = rootPage;
+            var sideBarMenu = new MenuPage();
+            TopNavigation = new NavigationPage(new MainPage());
+            var hamburgerBar = new RootPage();
+            hamburgerBar.Master = sideBarMenu;
+            //This detail page is actually the login screen wrapped w/ navigation functionality
+            hamburgerBar.Detail = TopNavigation;
+            MainPage = hamburgerBar;
         }
 
         protected override void OnStart()
