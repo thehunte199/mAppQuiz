@@ -22,7 +22,7 @@ namespace mAppQuiz
         {
             if (isValidEmail(this.Email.Text.Trim())) {
                 this.Email.BackgroundColor = Color.Transparent;
-                await this.DisplayAlert("Signed up", "You have clicked Login", "Ok", "Cancel");
+                await this.DisplayAlert("Signed up", "You have clicked Sign Up", "Ok", "Cancel");
             } else {
                 this.Email.BackgroundColor = Color.Red;
             }

@@ -16,7 +16,10 @@ namespace mAppQuiz
         {
             InitializeComponent();
             var sideBarMenu = new MenuPage();
-            TopNavigation = new NavigationPage(new MainPage());
+            //Wrapping the LoginPage with top nav functionality (allows user to return 
+            // - back to the login page from sign-up or settings, or some other page prior
+            // to login.)
+            TopNavigation = new NavigationPage(new LoginPage());
             var hamburgerBar = new RootPage();
             hamburgerBar.Master = sideBarMenu;
             //This detail page is actually the login screen wrapped w/ navigation functionality
