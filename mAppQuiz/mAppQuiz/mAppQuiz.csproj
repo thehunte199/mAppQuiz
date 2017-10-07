@@ -38,29 +38,29 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoginPage.xaml.cs">
+    <Compile Include="SignInPages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MenuPage.xaml.cs">
+    <Compile Include="NavigationPages\MenuPage.xaml.cs">
       <DependentUpon>MenuPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RootPage.xaml.cs">
+    <Compile Include="NavigationPages\RootPage.xaml.cs">
       <DependentUpon>RootPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RootPageDetail.xaml.cs">
+    <Compile Include="NavigationPages\RootPageDetail.xaml.cs">
       <DependentUpon>RootPageDetail.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RootPageMaster.xaml.cs">
+    <Compile Include="NavigationPages\RootPageMaster.xaml.cs">
       <DependentUpon>RootPageMaster.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RootPageMenuItem.cs" />
-    <Compile Include="SignUpPage.xaml.cs">
+    <Compile Include="NavigationPages\RootPageMenuItem.cs" />
+    <Compile Include="SignInPages\SignUpPage.xaml.cs">
       <DependentUpon>SignUpPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LoginPage.xaml">
+    <EmbeddedResource Include="SignInPages\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -84,31 +84,31 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="SignUpPage.xaml">
+    <EmbeddedResource Include="SignInPages\SignUpPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="MenuPage.xaml">
+    <EmbeddedResource Include="NavigationPages\MenuPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RootPage.xaml">
+    <EmbeddedResource Include="NavigationPages\RootPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RootPageMaster.xaml">
+    <EmbeddedResource Include="NavigationPages\RootPageMaster.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RootPageDetail.xaml">
+    <EmbeddedResource Include="NavigationPages\RootPageDetail.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
