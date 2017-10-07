@@ -7,11 +7,13 @@ using Xamarin.Forms;
 
 namespace mAppQuiz
 {
-    public partial class MainPage : ContentPage
+    class HyperlinkLabel : Label
     {
-        public MainPage()
+        public HyperlinkLabel()
         {
-            InitializeComponent();
+
         }
+
+
     }
 }
