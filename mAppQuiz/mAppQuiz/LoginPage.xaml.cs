@@ -22,10 +22,9 @@ namespace mAppQuiz
 
         async void OnLoginClick(object sender, EventArgs e)
         {
-            if (await this.DisplayAlert("Alert", "You have clicked Login", "Ok", "Cancel"))
-            {
-
-            }
+            User existingUser = new User(this.Username.Text, this.Password.Text);
+            //TODO: Needs to query against data store for a username and password combination
+            await this.DisplayAlert("Alert", "You have clicked Login", "Ok", "Cancel");
         }
 
         async void OnSignUpClick(object sender, EventArgs e)
