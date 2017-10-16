@@ -38,7 +38,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="IValidationRule.cs" />
+    <Compile Include="Validation\Rules\EmailRule.cs" />
+    <Compile Include="Validation\Rules\IsNotNullOrEmptyRule.cs" />
+    <Compile Include="Validation\IValidationRule.cs" />
     <Compile Include="SignInPages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
