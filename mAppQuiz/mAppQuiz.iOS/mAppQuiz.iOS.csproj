@@ -114,6 +114,8 @@
     <BundleResource Include="Resources\Icon-Small%402x.png" />
     <BundleResource Include="Resources\Icon-Small%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\appealing_logo.png" />
+    <BundleResource Include="Resources\logical_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -135,15 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\mAppQuiz\mAppQuiz.csproj">
-      <Project>{20870cf3-3620-4686-ab14-f98721a7f8db}</Project>
+      <Project>{4F827EEC-D373-4A97-ACF1-C7BD9C528272}</Project>
       <Name>mAppQuiz</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\appealing_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\logical_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

@@ -20,8 +20,11 @@ namespace mAppQuiz
 
         async void OnSignUp(object sender, EventArgs e)
         {
-            if (isValidEmail(this.Email.Text.Trim())) {
+            string email = this.Email.Text.Trim();
+            if (isValidEmail(email)) {
                 this.Email.BackgroundColor = Color.Transparent;
+                UserProfile newProfile = new UserProfile(this.FName.Text, this.LName.Text, email, new User(this.Username.Text, this.Password.Text));
+                //TODO: Needs to create a JSON object using newProfile and send that to data store
                 await this.DisplayAlert("Signed up", "You have clicked Sign Up", "Ok", "Cancel");
             } else {
                 this.Email.BackgroundColor = Color.Red;

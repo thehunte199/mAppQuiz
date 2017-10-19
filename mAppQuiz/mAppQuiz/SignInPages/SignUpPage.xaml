@@ -11,9 +11,9 @@
             <Label Text="Email: "/>
             <Entry x:Name="Email" IsVisible="True" Keyboard="Email"/>
             <Label Text="Username: "/>
-            <Entry Text="Username" IsVisible="True"/>
+            <Entry x:Name="Username" IsVisible="True"/>
             <Label Text="Password" />
-            <Entry x:Name="passwordEntry" Placeholder="must be greater than 8 characters" IsPassword="true" />
+            <Entry x:Name="Password" Placeholder="must be greater than 8 characters" IsPassword="true" />
             <Button Text="Sign Up" Clicked="OnSignUp" />
         </StackLayout>
     </ContentPage.Content>
