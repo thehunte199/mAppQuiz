@@ -110,6 +110,8 @@
     <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\appealing_logo.png" />
+    <AndroidResource Include="Resources\drawable\logical_logo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
@@ -121,15 +123,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\mAppQuiz\mAppQuiz.csproj">
-      <Project>{20870cf3-3620-4686-ab14-f98721a7f8db}</Project>
+      <Project>{4F827EEC-D373-4A97-ACF1-C7BD9C528272}</Project>
       <Name>mAppQuiz</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\appealing_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\logical_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />

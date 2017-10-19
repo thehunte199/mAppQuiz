@@ -8,9 +8,9 @@
             <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
                 <Image x:Name="logo"/>
                 <Label Text="Username" />
-                <Entry x:Name="usernameEntry" Placeholder="username" />
+                <Entry x:Name="Username" Placeholder="username" />
                 <Label Text="Password" />
-                <Entry x:Name="passwordEntry" Placeholder="must be greater than 8 characters" IsPassword="true" />
+                <Entry x:Name="Password" Placeholder="must be greater than 8 characters" IsPassword="true" />
                 <ContentView Padding="0, 20, 0, 0">
                     <Button Text="Login" Clicked="OnLoginClick" />
                 </ContentView>
