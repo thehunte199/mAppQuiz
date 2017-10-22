@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Xamarin.Forms;
 
 namespace mAppQuiz.Behaviors.Validation.Triggers
 {
-    class MultiTriggerConverter
+    public class DataEnteredConverter : IValueConverter
     {
-        /*public object Convert(object value, Type targetType,
+        public object Convert(object value, Type targetType,
             object param, CultureInfo culture)
         {
+            Debug.WriteLine("check");
             if ((int)value > 0)
                 return true;
             else
@@ -21,6 +25,6 @@ namespace mAppQuiz.Behaviors.Validation.Triggers
             object param, CultureInfo culture)
         {
             throw new NotSupportedException();
-        }*/
+        }
     }
 }

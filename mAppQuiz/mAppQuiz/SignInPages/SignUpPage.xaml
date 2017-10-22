@@ -5,8 +5,14 @@
              xmlns:behaviors ="clr-namespace:mAppQuiz.Behaviors.Validation.Rules;" 
              xmlns:triggers ="clr-namespace:mAppQuiz.Behaviors.Validation.Triggers;" >
     <ContentPage.Resources>
+        <!-- We can store certain utility classes here as resources to be used-->
         <ResourceDictionary>
-            <triggers:MultiTriggerConverter x:Key="DataEntered" />
+            <!-- This converter is responsible for checking that each Entry element
+            has data and that data is appropriate-->
+            <triggers:DataEnteredConverter x:Key="dataHasBeenEntered" />
+            <!-- This converter is responsible for checking that appropriate Entries
+            do not have a red background. (indicates invalid input)-->
+            <triggers:ValidEntryConverter x:Key="dataIsValid" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -20,30 +26,70 @@
                    Text=""
                    IsVisible="True"/>
             <Label Text="Email: "/>
-            <Entry x:Name="Email" IsVisible="True" Keyboard="Email">
+            <Entry x:Name="Email" Text="" IsVisible="True" Keyboard="Email">
                 <Entry.Behaviors>
                     <behaviors:EmailValidationBehavior/>
                 </Entry.Behaviors>
             </Entry>
             <Label Text="Username: "/>
-            <Entry x:Name="Username" IsVisible="True"/>
+            <Entry x:Name="Username"
+                   Text=""
+                   IsVisible="True"/>
             <Label Text="Password" />
-            <Entry x:Name="Password" Placeholder="must be greater than 8 characters" IsPassword="true" />
-            <Button x:Name="SignUpButton" Text="Sign Up" Clicked="OnSignUp">
+            <Entry x:Name="Password" 
+                   Text=""
+                   Placeholder="must be greater than 8 characters" IsPassword="true" >
+                <Entry.Behaviors>
+                    <behaviors:PasswordLengthBehavior/>
+                </Entry.Behaviors>
+            </Entry>
+            <!-- The Sign Up Button-->
+            <Button x:Name="SignUpButton" Text="Sign Up" Clicked="OnSignUp" IsEnabled="false">
                 <Button.Triggers>
+                    <!-- MultiTriggers allow us to check validate multiple input sources-->
                     <MultiTrigger TargetType="Button">
                         <MultiTrigger.Conditions>
+                            <!-- BindingConditions are responsible for individual inputs
+                            And if their Value variable matches the value returned by the Converter
+                            Then the Setter property will be called-->
                             <BindingCondition
                                 Binding="{Binding Source={x:Reference FName},
-                                Path=Text.Length}"
-                                Value="0" />
+                                Path=Text.Length,
+                                Converter={StaticResource dataHasBeenEntered}}"
+                                Value="true" />
                             <BindingCondition 
                                 Binding="{Binding Source={x:Reference LName},
-                                Path=Text.Length}"
-                                Value="0" />
+                                Path=Text.Length,
+                                Converter={StaticResource dataHasBeenEntered}}"
+                                Value="true" />
+                            <BindingCondition 
+                                Binding="{Binding Source={x:Reference Email},
+                                Path=Text.Length,
+                                Converter={StaticResource dataHasBeenEntered}}"
+                                Value="true" />
+                            <BindingCondition 
+                                Binding="{Binding Source={x:Reference Username},
+                                Path=Text.Length,
+                                Converter={StaticResource dataHasBeenEntered}}"
+                                Value="true" />
+                            <BindingCondition 
+                                Binding="{Binding Source={x:Reference Password},
+                                Path=Text.Length,
+                                Converter={StaticResource dataHasBeenEntered}}"
+                                Value="true" />
+                            <BindingCondition
+                                Binding="{Binding Source={x:Reference Email},
+                                Path=BackgroundColor,
+                                Converter={StaticResource dataIsValid}}"
+                                Value="true" />
+                            <BindingCondition
+                                Binding="{Binding Source={x:Reference Password},
+                                Path=BackgroundColor,
+                                Converter={StaticResource dataIsValid}}"
+                                Value="true" />
                         </MultiTrigger.Conditions>
-
-                        <Setter Property="IsEnabled" Value="False" />
+                        <!--This Setter is responsible for making Sign Up clickable-->
+                        <Setter Property="IsEnabled" Value="True" />
                     </MultiTrigger>
                 </Button.Triggers>
             </Button>

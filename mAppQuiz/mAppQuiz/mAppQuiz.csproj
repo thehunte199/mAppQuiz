@@ -39,8 +39,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Behaviors\Validation\Rules\EmailValidationBehavior.cs" />
-    <Compile Include="Behaviors\Validation\Rules\IsNotNullOrEmptyRule.cs" />
-    <Compile Include="Behaviors\Validation\Triggers\MultiTriggerConverter.cs" />
+    <Compile Include="Behaviors\Validation\Rules\PasswordLengthBehavior.cs" />
+    <Compile Include="Behaviors\Validation\Triggers\DataEnteredConverter.cs" />
+    <Compile Include="Behaviors\Validation\Triggers\ValidEntryConverter.cs" />
     <Compile Include="SignInPages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
