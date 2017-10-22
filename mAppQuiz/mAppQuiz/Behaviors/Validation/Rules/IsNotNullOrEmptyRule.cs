@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace mAppQuiz
 {
-    public class IsNotNullOrEmptyRule<T> : IValidationRule<T>
+    public class IsNotNullOrEmptyRule<T>
     {
         public string ValidationMessage { get; set; }
 

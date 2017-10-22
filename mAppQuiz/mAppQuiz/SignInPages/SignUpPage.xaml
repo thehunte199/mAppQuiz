@@ -1,20 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="mAppQuiz.SignUpPage">
+             x:Class="mAppQuiz.SignUpPage"
+             xmlns:behaviors ="clr-namespace:mAppQuiz.Behaviors.Validation.Rules;" 
+             xmlns:triggers ="clr-namespace:mAppQuiz.Behaviors.Validation.Triggers;" >
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <triggers:MultiTriggerConverter x:Key="DataEntered" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout>
             <Label Text="First Name: " />
-            <Entry x:Name="FName" IsVisible="True"/>
+            <Entry x:Name="FName" 
+                   Text=""
+                   IsVisible="True"/>
             <Label Text="Last Name: "/>
-            <Entry x:Name="LName" IsVisible="True"/>
+            <Entry x:Name="LName"
+                   Text=""
+                   IsVisible="True"/>
             <Label Text="Email: "/>
-            <Entry x:Name="Email" IsVisible="True" Keyboard="Email"/>
+            <Entry x:Name="Email" IsVisible="True" Keyboard="Email">
+                <Entry.Behaviors>
+                    <behaviors:EmailValidationBehavior/>
+                </Entry.Behaviors>
+            </Entry>
             <Label Text="Username: "/>
             <Entry x:Name="Username" IsVisible="True"/>
             <Label Text="Password" />
             <Entry x:Name="Password" Placeholder="must be greater than 8 characters" IsPassword="true" />
-            <Button Text="Sign Up" Clicked="OnSignUp" />
+            <Button x:Name="SignUpButton" Text="Sign Up" Clicked="OnSignUp">
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition
+                                Binding="{Binding Source={x:Reference FName},
+                                Path=Text.Length}"
+                                Value="0" />
+                            <BindingCondition 
+                                Binding="{Binding Source={x:Reference LName},
+                                Path=Text.Length}"
+                                Value="0" />
+                        </MultiTrigger.Conditions>
+
+                        <Setter Property="IsEnabled" Value="False" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
