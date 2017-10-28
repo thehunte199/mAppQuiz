@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:mAppQuiz"
              xmlns:triggers="clr-namespace:mAppQuiz.Behaviors.Validation.Triggers"
+             xmlns:behaviors ="clr-namespace:mAppQuiz.Behaviors.Validation.Rules" 
              x:Class="mAppQuiz.LoginPage">
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -10,7 +11,7 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ScrollView VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <ScrollView VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
             <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" WidthRequest="200">
                 <Image x:Name="logo"/>
                 <Label Text="Username" HorizontalOptions="CenterAndExpand"/>
@@ -20,7 +21,11 @@
                 <Label Text="Password" HorizontalOptions="CenterAndExpand"/>
                 <Entry x:Name="Password" 
                        Text="" 
-                       IsPassword="true" />
+                       IsPassword="true" >
+                    <Entry.Behaviors>
+                        <behaviors:PasswordLengthBehavior/>
+                    </Entry.Behaviors>
+                </Entry>
                 <ContentView Padding="0, 20, 0, 0">
                     <Button Text="Login" Clicked="OnLoginClick" IsEnabled="False">
                         <Button.Triggers>
