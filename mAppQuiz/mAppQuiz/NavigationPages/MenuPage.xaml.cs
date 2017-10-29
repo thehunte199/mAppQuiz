@@ -19,24 +19,37 @@ namespace mAppQuiz
             var masterPageItems = new List<RootPageMenuItem>();
             masterPageItems.Add(new RootPageMenuItem
             {
-                Title = "Sign-up Page",
+                Title = "Home Page",
                 IconSource = "contacts.png",
-                TargetType = typeof(SignUpPage)
+                TargetType = typeof(HomePage)
             });
             masterPageItems.Add(new RootPageMenuItem
             {
-                Title = "Home Page",
+                Title = "Create Class",
                 IconSource = "todo.png",
                 TargetType = typeof(SignUpPage)
             });
             masterPageItems.Add(new RootPageMenuItem
             {
-                Title = "Reminders",
+                Title = "View User Profile",
+                IconSource = "reminders.png",
+                TargetType = typeof(HomePage)
+            });
+            masterPageItems.Add(new RootPageMenuItem
+            {
+                Title = "Settings",
                 IconSource = "reminders.png",
                 TargetType = typeof(SignUpPage)
             });
 
             listView.ItemsSource = masterPageItems;
         }
-	}
+
+        void LogoutClicked(object sender, EventArgs e)
+        {
+            //Still need to clear user data once we have this set up.
+            Application.Current.MainPage = new LoginPage();
+        }
+    }
+
 }

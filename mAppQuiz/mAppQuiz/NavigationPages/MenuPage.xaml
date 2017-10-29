@@ -14,12 +14,17 @@
                                 <ColumnDefinition Width="30"/>
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Image Source="{Binding IconSource}" />
+                            <Image x:Name="icon" Source="appealing_logo.png" />
                             <Label Grid.Column="1" Text="{Binding Title}" VerticalOptions="FillAndExpand" />
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Button Text="Logout" 
+                VerticalOptions="EndAndExpand" 
+                HeightRequest="70"
+                Clicked="LogoutClicked"
+                IsVisible="True" />
     </StackLayout>
 </ContentPage>

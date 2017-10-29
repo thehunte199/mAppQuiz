@@ -9,6 +9,7 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <triggers:DataEnteredConverter x:Key="dataHasBeenEntered"/>
+            <triggers:ValidEntryConverter x:Key="dataIsValid" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -41,6 +42,11 @@
                                         Binding="{Binding Source={x:Reference Password},
                                         Path=Text.Length,
                                         Converter={StaticResource dataHasBeenEntered}}"
+                                        Value="true" />
+                                    <BindingCondition
+                                        Binding="{Binding Source={x:Reference Password},
+                                        Path=BackgroundColor,
+                                        Converter={StaticResource dataIsValid}}"
                                         Value="true" />
                                 </MultiTrigger.Conditions>
                                 <Setter Property="IsEnabled" Value="True"/>
