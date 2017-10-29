@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:mAppQuiz"
              xmlns:triggers="clr-namespace:mAppQuiz.Behaviors.Validation.Triggers"
              xmlns:behaviors ="clr-namespace:mAppQuiz.Behaviors.Validation.Rules" 
-             x:Class="mAppQuiz.LoginPage">
+             x:Class="mAppQuiz.LoginPage"
+             Title="mAppQuiz Login">
     <ContentPage.Resources>
         <ResourceDictionary>
             <triggers:DataEnteredConverter x:Key="dataHasBeenEntered"/>

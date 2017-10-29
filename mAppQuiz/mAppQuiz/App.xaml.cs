@@ -15,15 +15,15 @@ namespace mAppQuiz
         public App()
         {
             InitializeComponent();
-            var sideBarMenu = new MenuPage();
+            //var sideBarMenu = new MenuPage();
             //Wrapping the LoginPage with top nav functionality (allows user to return 
             // - back to the login page from sign-up or settings, or some other page prior
             // to login.)
-            TopNavigation = new NavigationPage(new LoginPage());
+            //TopNavigation = new NavigationPage(new LoginPage());
             var hamburgerBar = new RootPage();
-            hamburgerBar.Master = sideBarMenu;
+            //hamburgerBar.Master = sideBarMenu;
             //This detail page is actually the login screen wrapped w/ navigation functionality
-            hamburgerBar.Detail = TopNavigation;
+            //hamburgerBar.Detail = TopNavigation;
             MainPage = hamburgerBar;
         }
 

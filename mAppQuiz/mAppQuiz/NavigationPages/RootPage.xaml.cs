@@ -16,22 +16,21 @@ namespace mAppQuiz
         {
             InitializeComponent();
             MasterBehavior = MasterBehavior.Popover;
-            //MasterPage.ListView.ItemSelected += ListView_ItemSelected;
+            sideBar.ListView.ItemSelected += OnItemSelectedAsync;
         }
 
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void OnItemSelectedAsync(object sender, SelectedItemChangedEventArgs e)
         {
             var item = e.SelectedItem as RootPageMenuItem;
-            if (item == null)
-                return;
-
-            var page = (Page)Activator.CreateInstance(item.TargetType);
-            page.Title = item.Title;
-
-            Detail = new NavigationPage(page);
-            IsPresented = false;
-
-            MasterPage.ListView.SelectedItem = null;
+            if (item != null)
+            {
+                Page displayPage = (Page)Activator.CreateInstance(item.TargetType);
+                await Detail.Navigation.PushAsync(displayPage);
+                //Detail = new NavigationPage((Page)Activator.CreateInstance(item.TargetType));
+                sideBar.ListView.SelectedItem = null;
+                IsPresented = false;
+            }
         }
+
     }
 }

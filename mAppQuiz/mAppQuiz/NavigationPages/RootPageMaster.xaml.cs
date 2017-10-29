@@ -31,6 +31,7 @@ namespace mAppQuiz
             
             public RootPageMasterViewModel()
             {
+                /*
                 MenuItems = new ObservableCollection<RootPageMenuItem>(new[]
                 {
                     new RootPageMenuItem { Id = 0, Title = "Page 1" },
@@ -39,6 +40,7 @@ namespace mAppQuiz
                     new RootPageMenuItem { Id = 3, Title = "Page 4" },
                     new RootPageMenuItem { Id = 4, Title = "Page 5" },
                 });
+                */
             }
             
             #region INotifyPropertyChanged Implementation
