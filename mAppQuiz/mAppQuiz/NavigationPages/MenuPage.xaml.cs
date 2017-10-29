@@ -10,12 +10,46 @@ using Xamarin.Forms.Xaml;
 namespace mAppQuiz
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MenuPage : ContentPage
+
+    public partial class MenuPage : ContentPage
 	{
-		public MenuPage ()
-		{
-            Title = "Menu";
-			InitializeComponent ();
-		}
-	}
+        public ListView ListView { get { return listView; } }
+        public MenuPage ()
+		{InitializeComponent ();
+            var masterPageItems = new List<RootPageMenuItem>();
+            masterPageItems.Add(new RootPageMenuItem
+            {
+                Title = "Home Page",
+                IconSource = "contacts.png",
+                TargetType = typeof(HomePage)
+            });
+            masterPageItems.Add(new RootPageMenuItem
+            {
+                Title = "Create Class",
+                IconSource = "todo.png",
+                TargetType = typeof(SignUpPage)
+            });
+            masterPageItems.Add(new RootPageMenuItem
+            {
+                Title = "View User Profile",
+                IconSource = "reminders.png",
+                TargetType = typeof(HomePage)
+            });
+            masterPageItems.Add(new RootPageMenuItem
+            {
+                Title = "Settings",
+                IconSource = "reminders.png",
+                TargetType = typeof(SignUpPage)
+            });
+
+            listView.ItemsSource = masterPageItems;
+        }
+
+        void LogoutClicked(object sender, EventArgs e)
+        {
+            //Still need to clear user data once we have this set up.
+            Application.Current.MainPage = new LoginPage();
+        }
+    }
+
 }

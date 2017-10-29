@@ -4,10 +4,12 @@
              xmlns:local="clr-namespace:mAppQuiz"
              xmlns:triggers="clr-namespace:mAppQuiz.Behaviors.Validation.Triggers"
              xmlns:behaviors ="clr-namespace:mAppQuiz.Behaviors.Validation.Rules" 
-             x:Class="mAppQuiz.LoginPage">
+             x:Class="mAppQuiz.LoginPage"
+             Title="mAppQuiz Login">
     <ContentPage.Resources>
         <ResourceDictionary>
             <triggers:DataEnteredConverter x:Key="dataHasBeenEntered"/>
+            <triggers:ValidEntryConverter x:Key="dataIsValid" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -40,6 +42,11 @@
                                         Binding="{Binding Source={x:Reference Password},
                                         Path=Text.Length,
                                         Converter={StaticResource dataHasBeenEntered}}"
+                                        Value="true" />
+                                    <BindingCondition
+                                        Binding="{Binding Source={x:Reference Password},
+                                        Path=BackgroundColor,
+                                        Converter={StaticResource dataIsValid}}"
                                         Value="true" />
                                 </MultiTrigger.Conditions>
                                 <Setter Property="IsEnabled" Value="True"/>

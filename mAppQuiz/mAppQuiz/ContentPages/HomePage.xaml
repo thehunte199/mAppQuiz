@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mAppQuiz.HomePage"
+             Title="mAppQuiz Home Page">
+    <ContentPage.Content>
+        <ContentView>
+            <StackLayout>
+                <Label Text="Welcome to The Home Page!"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+                <Button Text="View Classes" 
+                        Clicked="ViewClasses"
+                        HorizontalOptions="CenterAndExpand"
+                        IsVisible="True"/>
+                <Button Text="Create Class" 
+                        Clicked="CreateClass"
+                        HorizontalOptions="CenterAndExpand"
+                        IsVisible="True"/>
+            </StackLayout>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mAppQuiz.SignUpPage"
              xmlns:behaviors ="clr-namespace:mAppQuiz.Behaviors.Validation.Rules;" 
-             xmlns:triggers ="clr-namespace:mAppQuiz.Behaviors.Validation.Triggers;" >
+             xmlns:triggers ="clr-namespace:mAppQuiz.Behaviors.Validation.Triggers;" 
+             Title="Sign-Up">
     <ContentPage.Resources>
         <!-- We can store certain utility classes here as resources to be used-->
         <ResourceDictionary>
