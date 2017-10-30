@@ -19,6 +19,11 @@ namespace mAppQuiz
         {
             await DisplayAlert("wee", "woo", "blah");
         }
+	
+	aync void CreateClass(object sender, EventArgs e)
+	{
+	    await DisplayAlert("I", "AM", "THE", "WALRUS");
+	}
 
     }
 }
