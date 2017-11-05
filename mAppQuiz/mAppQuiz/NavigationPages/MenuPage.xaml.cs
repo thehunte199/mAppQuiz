@@ -1,9 +1,9 @@
-﻿using System;
+﻿using mAppQuiz.ContentPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,21 +25,21 @@ namespace mAppQuiz
             });
             masterPageItems.Add(new RootPageMenuItem
             {
-                Title = "Create Class",
+                Title = "Create Course",
                 IconSource = "todo.png",
-                TargetType = typeof(SignUpPage)
+                TargetType = typeof(CreateCoursePage)
             });
             masterPageItems.Add(new RootPageMenuItem
             {
                 Title = "View User Profile",
                 IconSource = "reminders.png",
-                TargetType = typeof(HomePage)
+                TargetType = typeof(UserProfilePage)
             });
             masterPageItems.Add(new RootPageMenuItem
             {
                 Title = "Settings",
                 IconSource = "reminders.png",
-                TargetType = typeof(SignUpPage)
+                TargetType = typeof(SettingsPage)
             });
 
             listView.ItemsSource = masterPageItems;
@@ -48,7 +48,7 @@ namespace mAppQuiz
         void LogoutClicked(object sender, EventArgs e)
         {
             //Still need to clear user data once we have this set up.
-            Application.Current.MainPage = new LoginPage();
+            Application.Current.MainPage = new NavigationPage(new LoginPage());
         }
     }
 

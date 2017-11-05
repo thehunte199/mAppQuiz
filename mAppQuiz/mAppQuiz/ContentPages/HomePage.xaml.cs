@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace mAppQuiz
+namespace mAppQuiz.ContentPages
 {
 	public partial class HomePage : ContentPage
 	{
@@ -15,15 +15,14 @@ namespace mAppQuiz
             InitializeComponent();
 		}
 
-        async void ViewClasses(object sender, EventArgs e)
+        async void ViewCourses(object sender, EventArgs e)
         {
             await DisplayAlert("wee", "woo", "blah");
         }
 	
-	async void CreateClass(object sender, EventArgs e)
-	{
-	    await DisplayAlert("I", "AM", "THE", "WALRUS");
-	}
-
+	    async void CreateCourse(object sender, EventArgs e)
+	    {
+	     await DisplayAlert("I", "AM", "THE", "WALRUS");
+	    }
     }
 }
