@@ -34,7 +34,8 @@ namespace mAppQuiz
 
         async void OnSignUpClick(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SignUpPage());
+            Page signUpPage = (Page)Activator.CreateInstance(typeof(SignUpPage));
+            await Navigation.PushAsync(signUpPage);
         }
 
     }
