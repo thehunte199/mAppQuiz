@@ -14,7 +14,6 @@ namespace mAppQuiz.Behaviors.Validation.Triggers
         public object Convert(object value, Type targetType,
             object param, CultureInfo culture)
         {
-            Debug.WriteLine("check");
             if ((int)value > 0)
                 return true;
             else
