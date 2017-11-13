@@ -45,6 +45,10 @@
     <Compile Include="ContentPages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data\Answer.cs" />
+    <Compile Include="Data\Course.cs" />
+    <Compile Include="Data\Question.cs" />
+    <Compile Include="Data\Test.cs" />
     <Compile Include="ContentPages\CreateCoursePage.xaml.cs">
       <DependentUpon>CreateCoursePage.xaml</DependentUpon>
     </Compile>
@@ -74,8 +78,8 @@
       <DependentUpon>SignUpPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
-    <Compile Include="UserProfile.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\UserProfile.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SignInPages\LoginPage.xaml">
