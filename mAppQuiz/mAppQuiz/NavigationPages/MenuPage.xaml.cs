@@ -15,7 +15,8 @@ namespace mAppQuiz
 	{
         public ListView ListView { get { return listView; } }
         public MenuPage ()
-		{InitializeComponent ();
+		{
+            InitializeComponent ();
             var masterPageItems = new List<RootPageMenuItem>();
             masterPageItems.Add(new RootPageMenuItem
             {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using mAppQuiz.Facades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +18,8 @@ namespace mAppQuiz.ContentPages
 
         async void ViewCourses(object sender, EventArgs e)
         {
-            await DisplayAlert("wee", "woo", "blah");
+            Page viewCoursesPage = (Page)new ViewCoursesPage(DataFacade.getCourses("test"));
+            await Navigation.PushAsync(viewCoursesPage);
         }
 	
 	    async void CreateCourse(object sender, EventArgs e)
