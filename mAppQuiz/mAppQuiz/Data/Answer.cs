@@ -9,20 +9,18 @@ namespace mAppQuiz.Data
 {
     public class Answer
     {
-        public string Prompt { get; set; }
-        public string ParentAnswer { get; set; }
+        public string ParentChoice { get; set; }
         private readonly ObservableCollection<string> _SubChoices = new ObservableCollection<string>();
         public ObservableCollection<string> SubChoices {
             get { return _SubChoices; }
         }
 
-        public Answer (string prompt, string parent, string choice1, string choice2, string choice3)
+        public Answer (string choice, string subChoice1, string subChoice2, string subChoice3)
         {
-            Prompt = prompt;
-            ParentAnswer = parent;
-            SubChoices.Add(choice1);
-            SubChoices.Add(choice2);
-            SubChoices.Add(choice3);
+            ParentChoice = choice;
+            SubChoices.Add(subChoice1);
+            SubChoices.Add(subChoice2);
+            SubChoices.Add(subChoice3);
         }
     }
 }

@@ -58,6 +58,7 @@
     <Compile Include="ContentPages\UserProfilePage.xaml.cs">
       <DependentUpon>UserProfilePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Facades\DataFacade.cs" />
     <Compile Include="SignInPages\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
