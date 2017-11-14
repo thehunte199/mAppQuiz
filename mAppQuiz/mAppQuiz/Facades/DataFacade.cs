@@ -23,22 +23,62 @@ namespace mAppQuiz.Facades
                     "Example Tier2Answer C0", "Example Tier2Answer C1", "Example Tier2Answer C2");
                 Answer exampleAnswer3 = new Answer("example Tier1 answer D",
                     "Example Tier2Answer D0", "Example Tier2Answer D1", "Example Tier2Answer D2");
-                ObservableCollection<Answer> Q1Answers = new ObservableCollection<Answer>();
-                Q1Answers.Add(exampleAnswer0);
-                Q1Answers.Add(exampleAnswer1);
-                Q1Answers.Add(exampleAnswer2);
-                Q1Answers.Add(exampleAnswer3);
+                ObservableCollection<Answer> T1Q1Answers = new ObservableCollection<Answer>();
+                T1Q1Answers.Add(exampleAnswer0);
+                T1Q1Answers.Add(exampleAnswer1);
+                T1Q1Answers.Add(exampleAnswer2);
+                T1Q1Answers.Add(exampleAnswer3);
                 int TIER1ANSWER = 0;
                 int TIER2ANSWER = 0;
-                Question exampleQuestion1 = new Question("Example Question 1 prompt: ", Q1Answers, TIER1ANSWER, TIER2ANSWER);
+                Question exampleQuestion1 = new Question("Example Question 1 prompt: ", T1Q1Answers, TIER1ANSWER, TIER2ANSWER);
+                Question exampleQuestion2 = new Question("Example Question 2 prompt: ", T1Q1Answers, TIER1ANSWER, TIER2ANSWER);
+                Question exampleQuestion3 = new Question("Example Question 3 prompt: ", T1Q1Answers, TIER1ANSWER, TIER2ANSWER);
+                Question exampleQuestion4 = new Question("Example Question 4 prompt: ", T1Q1Answers, TIER1ANSWER, TIER2ANSWER);
                 ObservableCollection<Question> Test1Questions = new ObservableCollection<Question>();
                 Test1Questions.Add(exampleQuestion1);
+                Test1Questions.Add(exampleQuestion2);
+                Test1Questions.Add(exampleQuestion3);
+                Test1Questions.Add(exampleQuestion4);
                 Test exampleTest = new Test(Test1Questions, "Example Test1", "This is an example test", null);
+                Test exampleTest1 = new Test(Test1Questions, "Example Test2", "This is an example test", null);
+                Test exampleTest2 = new Test(Test1Questions, "Example Test3", "This is an example test", null);
                 ObservableCollection<Test> Course1Tests = new ObservableCollection<Test>();
                 Course1Tests.Add(exampleTest);
-                Course exampleCourse = new Course(Course1Tests, "Example Course1", "James Ward", "example course description");
-                ObservableCollection<Course> exampleCourses = new ObservableCollection<Course>();
-                exampleCourses.Add(exampleCourse);
+                Course1Tests.Add(exampleTest1);
+                Course1Tests.Add(exampleTest2);
+                Course exampleCourse1 = new Course(Course1Tests, "Example Course1", "James Ward", "example course description");
+
+                ObservableCollection<Answer> T2Q1Answers = new ObservableCollection<Answer>
+                {
+                    exampleAnswer0,
+                    exampleAnswer1,
+                    exampleAnswer2,
+                    exampleAnswer3
+                };
+                int T2TIER1ANSWER = 1;
+                int T2TIER2ANSWER = 1;
+                Question T2exampleQuestion1 = new Question("Example Question 1 prompt: ", T2Q1Answers, T2TIER1ANSWER, T2TIER2ANSWER);
+                ObservableCollection<Question> Test2Questions = new ObservableCollection<Question>
+                {
+                    T2exampleQuestion1
+                };
+                Test exampleTest3 = new Test(Test2Questions, "Example Test4", "This is an example test", null);
+                ObservableCollection<Test> Course2Tests = new ObservableCollection<Test>
+                {
+                    exampleTest,
+                    exampleTest2,
+                    exampleTest2,
+                    exampleTest3
+                };
+                Course exampleCourse2 = new Course(Course2Tests, "Example Course2", "Jay Fenwick", "this is an example course");
+                Course exampleCourse3 = new Course(Course1Tests, "Example Course3", "Yoda", "example course, this is");
+
+                ObservableCollection<Course> exampleCourses = new ObservableCollection<Course>
+                {
+                    exampleCourse1,
+                    exampleCourse2,
+                    exampleCourse3
+                };
                 return exampleCourses;
             }
             return null;
