@@ -18,7 +18,7 @@ namespace mAppQuiz.ContentPages
         {
             InitializeComponent();
             Tests.ItemsSource = course.Tests;
-
+            this.BindingContext = course;
         }
     }
 }

@@ -30,9 +30,8 @@ namespace mAppQuiz.ContentPages
             }
             Course myCourse = e.SelectedItem as Course;
             Page viewCourse = new CourseViewPage(myCourse);
-            viewCourse.BindingContext = myCourse;
             await Navigation.PushAsync(viewCourse);
-            await DisplayAlert(myCourse.Name, e.SelectedItem.ToString(), "Ok");
+            //await DisplayAlert(myCourse.Name, e.SelectedItem.ToString(), "Ok");
             //((ListView)sender).SelectedItem = null; //uncomment line if you want to disable the visual selection state.
         }
     }
