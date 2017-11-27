@@ -7,6 +7,7 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Grid.Column="2" Text="{Binding Teacher}"/>
+            <Label Grid.Column="2" Text="{Binding Description}"/>
             <ListView x:Name="tests" SeparatorVisibility="Default">
                 <ListView.ItemTemplate>
                     <DataTemplate>
