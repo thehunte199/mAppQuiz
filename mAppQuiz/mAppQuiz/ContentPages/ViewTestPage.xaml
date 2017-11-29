@@ -5,9 +5,8 @@
              Title="View Test Page">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="This is a placeholder for the View Test Page"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Grid.Column="2" Text="{Binding Name}"/>
+            <Label Grid.Column="2" Text="{Binding Description}"/>
             <Button Text="Take Test" Clicked="TakeTest"/>
         </StackLayout>
     </ContentPage.Content>

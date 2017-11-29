@@ -24,7 +24,8 @@ namespace mAppQuiz.ContentPages
 
         private async void AnswerSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            Page tierTwoQuestionPage = (Page)new TierTwoQuestionPage();
+            await Navigation.PushAsync(tierTwoQuestionPage);
         }
     }
 }
