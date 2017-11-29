@@ -14,18 +14,18 @@ namespace mAppQuiz.ContentPages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ViewTestPage : ContentPage
 	{
-        public Test CurrentTest { get; set; }
-        //need to access test grades somehow
+        	public Test CurrentTest { get; set; }
+        	//need to access test grades somehow
 		public ViewTestPage (Test selectedTest)
 		{
 			InitializeComponent ();
-            CurrentTest = selectedTest;
+        		CurrentTest = selectedTest;
 		}
 
-        private async void TakeTest(object sender, EventArgs e)
-        {
-            Page InProgressTest = (Page)new TakeTestPage(CurrentTest.Questions);
-            await Navigation.PushAsync(InProgressTest);
-        }
+        	private async void TakeTest(object sender, EventArgs e)
+       		{
+            		Page InProgressTest = (Page)new TakeTestPage(CurrentTest.Questions);
+            		await Navigation.PushAsync(InProgressTest);
+       		}
     }
 }
