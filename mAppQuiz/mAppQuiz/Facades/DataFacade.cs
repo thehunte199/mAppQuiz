@@ -84,8 +84,8 @@ namespace mAppQuiz.Facades
                 SoftwareEngineeringTests.Add(test1c1);
                 SoftwareEngineeringTests.Add(test2c1);
                 //Course 1
-                Course softwareEngineering = new Course(SoftwareEngineeringTests, "Software Engineering", "Smith", "Learn about Design Patterns.");
-
+                Course softwareEngineering = new Course(SoftwareEngineeringTests, "Software Engineering", "Smith", "Learn all about Design Patterns and how to apply them in real life situations.");
+                
                 /** ------------------------------------  Course 2  -------------------------------------------------------
                  * Answers for Question 1 Test 1 Course 2
                  */
