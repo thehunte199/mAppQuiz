@@ -48,8 +48,17 @@
     <Compile Include="ContentPages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContentPages\TakeTestPage.xaml.cs">
+      <DependentUpon>TakeTestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\TierTwoQuestionPage.xaml.cs">
+      <DependentUpon>TierTwoQuestionPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ContentPages\ViewCoursesPage.xaml.cs">
       <DependentUpon>ViewCoursesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ViewTestPage.xaml.cs">
+      <DependentUpon>ViewTestPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\Answer.cs" />
     <Compile Include="Data\Course.cs" />
@@ -174,6 +183,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ContentPages\CourseViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\ViewTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\TakeTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\TierTwoQuestionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

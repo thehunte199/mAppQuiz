@@ -1,10 +1,6 @@
 ﻿using mAppQuiz.Data;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -29,8 +25,9 @@ namespace mAppQuiz.ContentPages
                 return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
             }
             Course myCourse = e.SelectedItem as Course;
-            Page viewCourse = new CourseViewPage(myCourse);
+            Page viewCourse = (Page) new CourseViewPage(myCourse);
             await Navigation.PushAsync(viewCourse);
+            Courses.SelectedItem = null;
             //await DisplayAlert(myCourse.Name, e.SelectedItem.ToString(), "Ok");
             //((ListView)sender).SelectedItem = null; //uncomment line if you want to disable the visual selection state.
         }
