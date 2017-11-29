@@ -19,6 +19,7 @@ namespace mAppQuiz.ContentPages
 		public ViewTestPage (Test selectedTest)
 		{
 			InitializeComponent ();
+			this.BindingContext = selectedTest;
         		CurrentTest = selectedTest;
 		}
 
