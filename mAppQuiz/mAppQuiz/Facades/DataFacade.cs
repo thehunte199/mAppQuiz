@@ -15,69 +15,225 @@ namespace mAppQuiz.Facades
             //This is for testing purposes until we get our database running
             if (input == "test")
             {
-                Answer exampleAnswer0 = new Answer("example Tier1 answer A", 
-                    "Example Tier2Answer A0", "Example Tier2Answer A1", "Example Tier2Answer A2");
-                Answer exampleAnswer1 = new Answer("example Tier1 answer B",
-                    "Example Tier2Answer B0", "Example Tier2Answer B1", "Example Tier2Answer B2");
-                Answer exampleAnswer2 = new Answer("example Tier1 answer C",
-                    "Example Tier2Answer C0", "Example Tier2Answer C1", "Example Tier2Answer C2");
-                Answer exampleAnswer3 = new Answer("example Tier1 answer D",
-                    "Example Tier2Answer D0", "Example Tier2Answer D1", "Example Tier2Answer D2");
-                ObservableCollection<Answer> T1Q1Answers = new ObservableCollection<Answer>();
-                T1Q1Answers.Add(exampleAnswer0);
-                T1Q1Answers.Add(exampleAnswer1);
-                T1Q1Answers.Add(exampleAnswer2);
-                T1Q1Answers.Add(exampleAnswer3);
-                int TIER1ANSWER = 0;
-                int TIER2ANSWER = 0;
-                Question exampleQuestion1 = new Question("Example Question 1 prompt: ", T1Q1Answers, TIER1ANSWER, TIER2ANSWER);
-                Question exampleQuestion2 = new Question("Example Question 2 prompt: ", T1Q1Answers, TIER1ANSWER, TIER2ANSWER);
-                Question exampleQuestion3 = new Question("Example Question 3 prompt: ", T1Q1Answers, TIER1ANSWER, TIER2ANSWER);
-                Question exampleQuestion4 = new Question("Example Question 4 prompt: ", T1Q1Answers, TIER1ANSWER, TIER2ANSWER);
-                ObservableCollection<Question> Test1Questions = new ObservableCollection<Question>();
-                Test1Questions.Add(exampleQuestion1);
-                Test1Questions.Add(exampleQuestion2);
-                Test1Questions.Add(exampleQuestion3);
-                Test1Questions.Add(exampleQuestion4);
-                Test exampleTest = new Test(Test1Questions, "Example Test1", "This is an example test", null);
-                Test exampleTest1 = new Test(Test1Questions, "Example Test2", "This is an example test", null);
-                Test exampleTest2 = new Test(Test1Questions, "Example Test3", "This is an example test", null);
-                ObservableCollection<Test> Course1Tests = new ObservableCollection<Test>();
-                Course1Tests.Add(exampleTest);
-                Course1Tests.Add(exampleTest1);
-                Course1Tests.Add(exampleTest2);
-                Course exampleCourse1 = new Course(Course1Tests, "Example Course1", "James Ward", "example course description");
+                /** ------------------------------------  Course 1  -------------------------------------------------------
+                 * Answers for Question 1 Test 1
+                 */
+                Answer answer1at1c1 = new Answer("Behavioral", "Name a pattern that fits in this category.",
+                   "Template", "Decorator", "None of these");
+                Answer answer1bt1c1 = new Answer("Creational", "Name a pattern that fits in this category.",
+                    "Prototype", "Decorator", "None of these");
+                Answer answer1ct1c1 = new Answer("Structural", "Name a pattern that fits in this category.",
+                    "Bridge", "Factory Method", "None of these");
+                Answer answer1dt1c1 = new Answer("Conventional", "Name a pattern that fits in this category.",
+                    "Template", "State", "None of these");
+                ObservableCollection<Answer> C1T1Q1Answers = new ObservableCollection<Answer>();
+                C1T1Q1Answers.Add(answer1at1c1);
+                C1T1Q1Answers.Add(answer1bt1c1);
+                C1T1Q1Answers.Add(answer1ct1c1);
+                C1T1Q1Answers.Add(answer1dt1c1);
+                int C1T1Q1TIER1ANSWER = 0;
+                int C1T1Q1TIER2ANSWER = 0;
 
-                ObservableCollection<Answer> T2Q1Answers = new ObservableCollection<Answer>
-                {
-                    exampleAnswer0,
-                    exampleAnswer1,
-                    exampleAnswer2,
-                    exampleAnswer3
-                };
-                int T2TIER1ANSWER = 1;
-                int T2TIER2ANSWER = 1;
-                Question T2exampleQuestion1 = new Question("Example Question 1 prompt: ", T2Q1Answers, T2TIER1ANSWER, T2TIER2ANSWER);
-                ObservableCollection<Question> Test2Questions = new ObservableCollection<Question>
-                {
-                    T2exampleQuestion1
-                };
-                Test exampleTest3 = new Test(Test2Questions, "Example Test4", "This is an example test", null);
-                ObservableCollection<Test> Course2Tests = new ObservableCollection<Test>
-                {
-                    exampleTest,
-                    exampleTest2,
-                    exampleTest2,
-                    exampleTest3
-                };
-                Course exampleCourse2 = new Course(Course2Tests, "Example Course2", "Jay Fenwick", "this is an example course");
-                Course exampleCourse3 = new Course(Course1Tests, "Example Course3", "Yoda", "example course, this is");
+                //Answers for Question 2 Test 1
+                Answer answer2at1c1 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2bt1c1 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2ct1c1 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2dt1c1 = new Answer("", "",
+                    "", "", "None of these");
+                ObservableCollection<Answer> C1T1Q2Answers = new ObservableCollection<Answer>();
+                C1T1Q1Answers.Add(answer2at1c1);
+                C1T1Q1Answers.Add(answer2bt1c1);
+                C1T1Q1Answers.Add(answer2ct1c1);
+                C1T1Q1Answers.Add(answer2dt1c1);
+                int C1T1Q2TIER1ANSWER = 0;
+                int C1T1Q2TIER2ANSWER = 0;
 
+                //Answers for Question 3 Test 1
+                Answer answer3at1c1 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3bt1c1 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3ct1c1 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3dt1c1 = new Answer("", "",
+                    "", "", "None of these");
+                ObservableCollection<Answer> C1T1Q3Answers = new ObservableCollection<Answer>();
+                C1T1Q1Answers.Add(answer2at1c1);
+                C1T1Q1Answers.Add(answer2bt1c1);
+                C1T1Q1Answers.Add(answer2ct1c1);
+                C1T1Q1Answers.Add(answer2dt1c1);
+                int C1T1Q3TIER1ANSWER = 0;
+                int C1T1Q3TIER2ANSWER = 0;
+
+                //Questions for Test 1
+                Question question1t1c1 = new Question("_______________ patterns are concerned with how classes and objects interact and distribute responsibility.", C1T1Q1Answers, C1T1Q1TIER1ANSWER, C1T1Q1TIER2ANSWER);
+                Question question2t1c1 = new Question("Example Question 2 prompt: ", C1T1Q2Answers, C1T1Q2TIER1ANSWER, C1T1Q2TIER2ANSWER);
+                Question question3t1c1 = new Question("Example Question 3 prompt: ", C1T1Q3Answers, C1T1Q3TIER1ANSWER, C1T1Q3TIER2ANSWER);
+                ObservableCollection<Question> Test1C1Questions = new ObservableCollection<Question>();
+                Test1C1Questions.Add(question1t1c1);
+                Test1C1Questions.Add(question2t1c1);
+                Test1C1Questions.Add(question3t1c1);
+
+                //Tests for Software Engineering Course
+                Test test1c1 = new Test(Test1C1Questions, "Example Test1", "This is an example test", null);
+                Test test2c1 = new Test(Test1C1Questions, "Example Test2", "This is an example test", null);
+                ObservableCollection<Test> SoftwareEngineeringTests = new ObservableCollection<Test>();
+                SoftwareEngineeringTests.Add(test1c1);
+                SoftwareEngineeringTests.Add(test2c1);
+                //Course 1
+                Course softwareEngineering = new Course(SoftwareEngineeringTests, "Software Engineering", "Smith", "Learn about Design Patterns.");
+
+                /** ------------------------------------  Course 2  -------------------------------------------------------
+                 * Answers for Question 1 Test 1 Course 2
+                 */
+                Answer answer1at1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer1bt1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer1ct1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer1dt1c2 = new Answer("", "",
+                    "", "", "None of these");
+                ObservableCollection<Answer> C2T1Q1Answers = new ObservableCollection<Answer>();
+                C2T1Q1Answers.Add(answer1at1c2);
+                C2T1Q1Answers.Add(answer1bt1c2);
+                C2T1Q1Answers.Add(answer1ct1c2);
+                C2T1Q1Answers.Add(answer1dt1c2);
+                int C2T1Q1TIER1ANSWER = 0;
+                int C2T1Q1TIER2ANSWER = 0;
+
+                //Answers for Question 2 Test 1 Course 2
+                Answer answer2at1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2bt1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2ct1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2dt1c2 = new Answer("", "",
+                    "", "", "None of these");
+                ObservableCollection<Answer> C2T1Q2Answers = new ObservableCollection<Answer>();
+                C2T1Q1Answers.Add(answer2at1c2);
+                C2T1Q1Answers.Add(answer2bt1c2);
+                C2T1Q1Answers.Add(answer2ct1c2);
+                C2T1Q1Answers.Add(answer2dt1c2);
+                int C2T1Q2TIER1ANSWER = 0;
+                int C2T1Q2TIER2ANSWER = 0;
+
+                //Answers for Question 3 Test 1 Course 2
+                Answer answer3at1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3bt1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3ct1c2 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3dt1c2 = new Answer("", "",
+                    "", "", "None of these");
+                ObservableCollection<Answer> C2T1Q3Answers = new ObservableCollection<Answer>();
+                C2T1Q1Answers.Add(answer2at1c2);
+                C2T1Q1Answers.Add(answer2bt1c2);
+                C2T1Q1Answers.Add(answer2ct1c2);
+                C2T1Q1Answers.Add(answer2dt1c2);
+                int C2T1Q3TIER1ANSWER = 0;
+                int C2T1Q3TIER2ANSWER = 0;
+
+                //Questions for Test 1 Course 2
+                Question question1t1c2 = new Question("_______________ patterns are concerned with how classes and objects interact and distribute responsibility.", C2T1Q1Answers, C2T1Q1TIER1ANSWER, C2T1Q1TIER2ANSWER);
+                Question question2t1c2 = new Question("Example Question 2 prompt: ", C2T1Q2Answers, C2T1Q2TIER1ANSWER, C2T1Q2TIER2ANSWER);
+                Question question3t1c2 = new Question("Example Question 3 prompt: ", C2T1Q3Answers, C2T1Q3TIER1ANSWER, C2T1Q3TIER2ANSWER);
+                ObservableCollection<Question> Test1C2Questions = new ObservableCollection<Question>();
+                Test1C2Questions.Add(question1t1c1);
+                Test1C2Questions.Add(question2t1c1);
+                Test1C2Questions.Add(question3t1c1);
+
+                //Tests for Software Engineering Course
+                Test test1c2 = new Test(Test1C2Questions, "Example Test1", "This is an example test", null);
+                Test test2c2 = new Test(Test1C2Questions, "Example Test2", "This is an example test", null);
+                ObservableCollection<Test> Course2Tests = new ObservableCollection<Test>();
+                SoftwareEngineeringTests.Add(test1c2);
+                SoftwareEngineeringTests.Add(test2c2);
+                //Course 2
+                Course course2 = new Course(Course2Tests, "Course 2", "Johnson", "Learn about...");
+
+                /** ------------------------------------  Course 3  -------------------------------------------------------
+                 * Answers for Question 1 Test 1 Course 3
+                 */
+                Answer answer1at1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer1bt1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer1ct1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer1dt1c3 = new Answer("", "",
+                    "", "", "None of these");
+                ObservableCollection<Answer> C3T1Q1Answers = new ObservableCollection<Answer>();
+                C3T1Q1Answers.Add(answer1at1c3);
+                C3T1Q1Answers.Add(answer1bt1c3);
+                C3T1Q1Answers.Add(answer1ct1c3);
+                C3T1Q1Answers.Add(answer1dt1c3);
+                int C3T1Q1TIER1ANSWER = 0;
+                int C3T1Q1TIER2ANSWER = 0;
+
+                //Answers for Question 2 Test 1 Course 3
+                Answer answer2at1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2bt1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2ct1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer2dt1c3 = new Answer("", "",
+                    "", "", "None of these");
+                ObservableCollection<Answer> C3T1Q2Answers = new ObservableCollection<Answer>();
+                C3T1Q1Answers.Add(answer2at1c3);
+                C3T1Q1Answers.Add(answer2bt1c3);
+                C3T1Q1Answers.Add(answer2ct1c3);
+                C3T1Q1Answers.Add(answer2dt1c3);
+                int C3T1Q2TIER1ANSWER = 0;
+                int C3T1Q2TIER2ANSWER = 0;
+
+                //Answers for Question 3 Test 1 Course 3
+                Answer answer3at1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3bt1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3ct1c3 = new Answer("", "",
+                    "", "", "None of these");
+                Answer answer3dt1c3 = new Answer("", "",
+                    "", "", "None of these");
+                ObservableCollection<Answer> C3T1Q3Answers = new ObservableCollection<Answer>();
+                C3T1Q1Answers.Add(answer2at1c3);
+                C3T1Q1Answers.Add(answer2bt1c3);
+                C3T1Q1Answers.Add(answer2ct1c3);
+                C3T1Q1Answers.Add(answer2dt1c3);
+                int C3T1Q3TIER1ANSWER = 0;
+                int C3T1Q3TIER2ANSWER = 0;
+
+                //Questions for Test 1 Course 3
+                Question question1t1c3 = new Question("_______________ patterns are concerned with how classes and objects interact and distribute responsibility.", C3T1Q1Answers, C3T1Q1TIER1ANSWER, C3T1Q1TIER2ANSWER);
+                Question question2t1c3 = new Question("Example Question 2 prompt: ", C3T1Q2Answers, C3T1Q2TIER1ANSWER, C3T1Q2TIER2ANSWER);
+                Question question3t1c3 = new Question("Example Question 3 prompt: ", C3T1Q3Answers, C3T1Q3TIER1ANSWER, C3T1Q3TIER2ANSWER);
+                ObservableCollection<Question> Test1C3Questions = new ObservableCollection<Question>();
+                Test1C3Questions.Add(question1t1c3);
+                Test1C3Questions.Add(question2t1c3);
+                Test1C3Questions.Add(question3t1c3);
+
+                //Tests for Software Engineering Course
+                Test test1c3 = new Test(Test1C3Questions, "Example Test1", "This is an example test", null);
+                Test test2c3 = new Test(Test1C3Questions, "Example Test2", "This is an example test", null);
+                ObservableCollection<Test> Course3Tests = new ObservableCollection<Test>();
+                SoftwareEngineeringTests.Add(test1c3);
+                SoftwareEngineeringTests.Add(test2c3);
+                //Course 3
+                Course course3 = new Course(Course3Tests, "Course 3", "Wright", "Learn about....");
+
+                //All Example Courses
                 ObservableCollection<Course> exampleCourses = new ObservableCollection<Course>
                 {
-                    exampleCourse1,
-                    exampleCourse2,
-                    exampleCourse3
+                    softwareEngineering,
+                    course2,
+                    course3
                 };
                 return exampleCourses;
             }
