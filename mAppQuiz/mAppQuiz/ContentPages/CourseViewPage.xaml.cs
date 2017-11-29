@@ -18,7 +18,20 @@ namespace mAppQuiz.ContentPages
         {
             InitializeComponent();
             Tests.ItemsSource = course.Tests;
+            Tests.ItemSelected += OnSelection;
 
+        }
+
+        private async void OnSelection(object sender, SelectedItemChangedEventArgs e)
+        {
+            if (e.SelectedItem == null)
+            {
+                return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
+            }
+            Test selectedTest = e.SelectedItem as Test;
+            Page viewTest = (Page) new ViewTestPage(selectedTest);
+            await Navigation.PushAsync(viewTest);
+            Tests.SelectedItem = null;
         }
     }
 }

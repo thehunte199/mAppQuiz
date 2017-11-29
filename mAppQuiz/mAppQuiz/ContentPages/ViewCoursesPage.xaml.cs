@@ -29,9 +29,10 @@ namespace mAppQuiz.ContentPages
                 return; //ItemSelected is called on deselection, which results in SelectedItem being set to null
             }
             Course myCourse = e.SelectedItem as Course;
-            Page viewCourse = new CourseViewPage(myCourse);
+            Page viewCourse = (Page) new CourseViewPage(myCourse);
             await Navigation.PushAsync(viewCourse);
-            await DisplayAlert(myCourse.Name, e.SelectedItem.ToString(), "Ok");
+            Courses.SelectedItem = null;
+            //await DisplayAlert(myCourse.Name, e.SelectedItem.ToString(), "Ok");
             //((ListView)sender).SelectedItem = null; //uncomment line if you want to disable the visual selection state.
         }
     }
