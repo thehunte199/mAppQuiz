@@ -25,7 +25,7 @@ namespace mAppQuiz.ContentPages
 
         	private async void TakeTest(object sender, EventArgs e)
        		{
-            		Page InProgressTest = (Page)new TakeTestPage(CurrentTest.Questions);
+            		Page InProgressTest = (Page)new TakeTestPage(CurrentTest);
             		await Navigation.PushAsync(InProgressTest);
        		}
     }

@@ -4,7 +4,7 @@
              x:Class="mAppQuiz.ContentPages.TierTwoQuestionPage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Not Yet Implemented!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

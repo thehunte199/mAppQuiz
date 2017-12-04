@@ -2,15 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="mAppQuiz.ContentPages.TakeTestPage"
-             Title="Testing In Progress">
+             Title="{Binding Name}">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="questions" SeparatorVisibility="Default">
-                <ListView.HeaderTemplate>
-                    <DataTemplate>
-                        <Label Text="{Binding Prompt}"/>
-                    </DataTemplate>
-                </ListView.HeaderTemplate>
+            <ListView x:Name="questions" 
+                      SeparatorVisibility="Default"
+                      GroupDisplayBinding="{Binding QPrompt}"
+                      RowHeight="75"
+                      IsGroupingEnabled="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -19,7 +18,6 @@
                                     <ColumnDefinition Width="30"/>
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
-                                <Label Grid.Column="1" Text="In Progress"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

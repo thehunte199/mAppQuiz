@@ -15,11 +15,13 @@ namespace mAppQuiz.ContentPages
 	public partial class TakeTestPage : ContentPage
 	{
         ListView Questions { get { return questions; } }
-		public TakeTestPage (ObservableCollection<Question> testQuestions)
+		public TakeTestPage (Test testQuestions)
 		{
 			InitializeComponent ();
-            Questions.ItemsSource = testQuestions;
+            this.BindingContext = testQuestions;
+            Questions.ItemsSource = testQuestions.Questions;
             Questions.ItemSelected += AnswerSelected;
+            System.Diagnostics.Debug.WriteLine(testQuestions.Questions.First().QPrompt);
 		}
 
         private async void AnswerSelected(object sender, SelectedItemChangedEventArgs e)
