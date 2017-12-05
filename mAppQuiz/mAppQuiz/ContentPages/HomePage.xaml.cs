@@ -1,5 +1,7 @@
-﻿using System;
+﻿using mAppQuiz.Facades;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +19,9 @@ namespace mAppQuiz.ContentPages
 
         async void ViewCourses(object sender, EventArgs e)
         {
-            await DisplayAlert("wee", "woo", "blah");
+            ObservableCollection<Data.Course> myCourses = DataFacade.getCourses("test");
+            Page viewCoursesPage = (Page)new ViewCoursesPage(myCourses);
+            await Navigation.PushAsync(viewCoursesPage);
         }
 	
 	    async void CreateCourse(object sender, EventArgs e)

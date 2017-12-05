@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="mAppQuiz.ContentPages.TierTwoQuestionPage"
+             Title="Tier Two Question">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="SubList" 
+                      SeparatorVisibility="Default"
+                      GroupDisplayBinding="{Binding SubAns}"
+                      RowHeight="75"
+                      IsGroupingEnabled="True">
+                <ListView.Header>
+                    <StackLayout Padding="10,5,0,5">
+                        <Label></Label>
+                    </StackLayout>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5, 10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="30"/>
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="5,5,5,5">
+                                <Button Text="{Binding SubAns}"
+                                        Clicked="SubSelected"
+                                        CommandParameter="{Binding .}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+
+                </ListView.GroupHeaderTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -38,16 +38,38 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Behaviors\Validation\Rules\EmailValidationBehavior.cs" />
-    <Compile Include="Behaviors\Validation\Rules\PasswordLengthBehavior.cs" />
-    <Compile Include="Behaviors\Validation\Triggers\DataEnteredConverter.cs" />
-    <Compile Include="Behaviors\Validation\Triggers\ValidEntryConverter.cs" />
+    <Compile Include="ContentPages\SemiFunctioningTakeTestPage.xaml.cs">
+      <DependentUpon>SemiFunctioningTakeTestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\TierOneQuestionPage.xaml.cs">
+      <DependentUpon>TierOneQuestionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInteraction\Validation\Behaviors\EmailValidationBehavior.cs" />
+    <Compile Include="UserInteraction\Validation\Behaviors\PasswordLengthBehavior.cs" />
+    <Compile Include="UserInteraction\Validation\Triggers\DataEnteredConverter.cs" />
+    <Compile Include="UserInteraction\Validation\Triggers\ValidEntryConverter.cs" />
+    <Compile Include="ContentPages\CourseViewPage.xaml.cs">
+      <DependentUpon>CourseViewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ContentPages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\TakeTestPage.xaml.cs">
+      <DependentUpon>TakeTestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\TierTwoQuestionPage.xaml.cs">
+      <DependentUpon>TierTwoQuestionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ViewCoursesPage.xaml.cs">
+      <DependentUpon>ViewCoursesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ContentPages\ViewTestPage.xaml.cs">
+      <DependentUpon>ViewTestPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Data\Answer.cs" />
     <Compile Include="Data\Course.cs" />
     <Compile Include="Data\Question.cs" />
+    <Compile Include="Data\SubAnswer.cs" />
     <Compile Include="Data\Test.cs" />
     <Compile Include="ContentPages\CreateCoursePage.xaml.cs">
       <DependentUpon>CreateCoursePage.xaml</DependentUpon>
@@ -156,6 +178,48 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ContentPages\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\ViewCoursesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\CourseViewPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\ViewTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\TakeTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\TierTwoQuestionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\SemiFunctioningTakeTestPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ContentPages\TierOneQuestionPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

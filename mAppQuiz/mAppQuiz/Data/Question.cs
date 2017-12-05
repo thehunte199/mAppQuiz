@@ -9,7 +9,7 @@ namespace mAppQuiz.Data
 {
     public class Question
     {
-        public string Prompt { get; set; }
+        public string QPrompt { get; set; }
         //this private dummy is necessary for setting answers to entirely 
         //new collection while maintaining automatic view update functionality
         private ObservableCollection<Answer> _answers;
@@ -25,7 +25,7 @@ namespace mAppQuiz.Data
 
         public Question (string prompt, ObservableCollection<Answer> answers, int correctParent, int correctSub)
         {
-            Prompt = prompt;
+            QPrompt = prompt;
             Answers = answers;
             CorrectAnswers = Tuple.Create<int, int>(correctParent, correctSub);
             Answered = false;
