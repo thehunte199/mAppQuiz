@@ -11,12 +11,12 @@ namespace mAppQuiz.Data
     {
         public string ParentChoice { get; set; }
         public string SubPrompt { get; set; }
-        private readonly ObservableCollection<string> _SubChoices = new ObservableCollection<string>();
-        public ObservableCollection<string> SubChoices {
+        private readonly ObservableCollection<SubAnswer> _SubChoices = new ObservableCollection<SubAnswer>();
+        public ObservableCollection<SubAnswer> SubChoices {
             get { return _SubChoices; }
         }
 
-        public Answer (string choice, string subPrompt, string subChoice1, string subChoice2, string subChoice3)
+        public Answer (string choice, string subPrompt, SubAnswer subChoice1, SubAnswer subChoice2, SubAnswer subChoice3)
         {
             ParentChoice = choice;
             SubPrompt = subPrompt;
