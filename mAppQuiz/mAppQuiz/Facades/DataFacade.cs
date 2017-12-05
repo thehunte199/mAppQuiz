@@ -20,13 +20,13 @@ namespace mAppQuiz.Facades
                  * Contains:    1   test    with    3   questions
                  */
                 Answer answer1at1c1 = new Answer("Behavioral", "Name a pattern that fits in this category.",
-                   "Template", "Decorator", "None of these");
+                   new SubAnswer("Template"), new SubAnswer("Decorator"), new SubAnswer("None of these"));
                 Answer answer1bt1c1 = new Answer("Creational", "Name a pattern that fits in this category.",
-                    "Prototype", "Decorator", "None of these");
+                    new SubAnswer("Prototype"), new SubAnswer("Decorator"), new SubAnswer("None of these"));
                 Answer answer1ct1c1 = new Answer("Structural", "Name a pattern that fits in this category.",
-                    "Bridge", "Factory Method", "None of these");
+                    new SubAnswer("Bridge"), new SubAnswer("Factory Method"), new SubAnswer("None of these"));
                 Answer answer1dt1c1 = new Answer("Conventional", "Name a pattern that fits in this category.",
-                    "Template", "State", "None of these");
+                    new SubAnswer("Template"), new SubAnswer("State"), new SubAnswer("None of these"));
                 ObservableCollection<Answer> C1T1Q1Answers = new ObservableCollection<Answer>();
                 C1T1Q1Answers.Add(answer1at1c1);
                 C1T1Q1Answers.Add(answer1bt1c1);
@@ -37,13 +37,13 @@ namespace mAppQuiz.Facades
 
                 //Answers for Question 2 Test 1
                 Answer answer2at1c1 = new Answer("insertion… deletion", "Name a pattern that closely follows this principle.",
-                    "Strategy", "Decorator", "Memento");
+                    new SubAnswer("Strategy"), new SubAnswer("Decorator"), new SubAnswer("Memento"));
                 Answer answer2bt1c1 = new Answer("inheritance… interfacing", "Name a pattern that closely follows this principle.",
-                    "Strategy", "Decorator", "Memento");
+                    new SubAnswer("Strategy"), new SubAnswer("Decorator"), new SubAnswer("Memento"));
                 Answer answer2ct1c1 = new Answer("patterns… principles", "Name a pattern that closely follows this principle.",
-                    "Strategy", "Decorator", "Memento");
+                    new SubAnswer("Strategy"), new SubAnswer("Decorator"), new SubAnswer("Memento"));
                 Answer answer2dt1c1 = new Answer("extension… modification", "Name a pattern that closely follows this principle.",
-                    "Strategy", "Decorator", "Memento");
+                    new SubAnswer("Strategy"), new SubAnswer("Decorator"), new SubAnswer("Memento"));
                 ObservableCollection<Answer> C1T1Q2Answers = new ObservableCollection<Answer>();
                 C1T1Q1Answers.Add(answer2at1c1);
                 C1T1Q1Answers.Add(answer2bt1c1);
@@ -54,13 +54,21 @@ namespace mAppQuiz.Facades
 
                 //Answers for Question 3 Test 1
                 Answer answer3at1c1 = new Answer("Builder", "What is the intent of this pattern?",
-                    "Defines an instance for creating an object but letting subclasses decide which class to instantiate", "Ensure that only one instance of a class is created", "None of these");
+                    new SubAnswer("Defines an instance for creating an object but letting subclasses decide which class to instantiate"),
+                    new SubAnswer("Ensure that only one instance of a class is created"),
+                    new SubAnswer("None of these"));
                 Answer answer3bt1c1 = new Answer("Singleton", "What is the intent of this pattern?",
-                    "Defines an instance for creating an object but letting subclasses decide which class to instantiate", "Ensure that only one instance of a class is created", "None of these");
+                    new SubAnswer("Defines an instance for creating an object but letting subclasses decide which class to instantiate"),
+                    new SubAnswer("Ensure that only one instance of a class is created"), 
+                    new SubAnswer("None of these"));
                 Answer answer3ct1c1 = new Answer("Simple Factory", "What is the intent of this pattern?",
-                    "Creates objects without exposing the instantiation logic to the client.", "Ensure that only one instance of a class is created", "None of these");
+                    new SubAnswer("Creates objects without exposing the instantiation logic to the client."),
+                    new SubAnswer("Ensure that only one instance of a class is created"),
+                    new SubAnswer("None of these"));
                 Answer answer3dt1c1 = new Answer("Factory Method", "What is the intent of this pattern?",
-                    "Defines an interface for creating objects, but let subclasses to decide which class to instantiate", "Ensure that only one instance of a class is created", "None of these");
+                    new SubAnswer("Defines an interface for creating objects, but let subclasses to decide which class to instantiate"),
+                    new SubAnswer("Ensure that only one instance of a class is created"),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C1T1Q3Answers = new ObservableCollection<Answer>();
                 C1T1Q1Answers.Add(answer2at1c1);
                 C1T1Q1Answers.Add(answer2bt1c1);
@@ -90,13 +98,21 @@ namespace mAppQuiz.Facades
                  * Contains:    2   test    with    3   questions   each
                  */
                 Answer answer1at1c2 = new Answer("Orthogonal", "Define this term farther.",
-                    "W' is a subspace of R^n", "The number of vectors in any basis of H; the zero subspace's dimension is 0", "None of these");
+                    new SubAnswer("W' is a subspace of R^n"),
+                    new SubAnswer("The number of vectors in any basis of H; the zero subspace's dimension is 0"),
+                    new SubAnswer("None of these"));
                 Answer answer1bt1c2 = new Answer("Onto", "Define this term farther.",
-                    "W' is a subspace of R^n", "consistent for any b; pivots in all rows", "None of these");
+                    new SubAnswer("W' is a subspace of R^n"),
+                    new SubAnswer("consistent for any b; pivots in all rows"),
+                    new SubAnswer("None of these"));
                 Answer answer1ct1c2 = new Answer("Rank", "Define this term farther.",
-                    "consistent for any b; pivots in all rows", "The dimension of the column space", "None of these");
+                    new SubAnswer("consistent for any b; pivots in all rows"),
+                    new SubAnswer("The dimension of the column space"),
+                    new SubAnswer("None of these"));
                 Answer answer1dt1c2 = new Answer("Dimension", "Define this term farther.",
-                    "The number of vectors in any basis of H; the zero subspace's dimension is 0", "The dimension of the column space", "None of these");
+                    new SubAnswer("The number of vectors in any basis of H; the zero subspace's dimension is 0"),
+                    new SubAnswer("The dimension of the column space"),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T1Q1Answers = new ObservableCollection<Answer>();
                 C2T1Q1Answers.Add(answer1at1c2);
                 C2T1Q1Answers.Add(answer1bt1c2);
@@ -107,13 +123,21 @@ namespace mAppQuiz.Facades
 
                 //Answers for Question 2 Test 1 Course 2
                 Answer answer2at1c2 = new Answer("Homogeneous", "Define this term farther.",
-                    "the x = 0 solution is a TRIVIAL solution", "flips rows and columns", "None of these");
+                    new SubAnswer("the x = 0 solution is a TRIVIAL solution"),
+                    new SubAnswer("flips rows and columns"),
+                    new SubAnswer("None of these"));
                 Answer answer2bt1c2 = new Answer("Independent", "Define this term farther.",
-                    "the columns of A are independent if only the trivial solution exists", "If non-zero weights that satisfy the equation exist", "None of these");
+                    new SubAnswer("the columns of A are independent if only the trivial solution exists"),
+                    new SubAnswer("If non-zero weights that satisfy the equation exist"),
+                    new SubAnswer("None of these"));
                 Answer answer2ct1c2 = new Answer("Dependent", "Define this term farther.",
-                    "assigns each vector x in R^n a vector T(x) in R^m", "If non-zero weights that satisfy the equation exist", "None of these");
+                    new SubAnswer("assigns each vector x in R^n a vector T(x) in R^m"),
+                    new SubAnswer("If non-zero weights that satisfy the equation exist"),
+                    new SubAnswer("None of these"));
                 Answer answer2dt1c2 = new Answer("Transformation", "Define this term farther.",
-                    "assigns each vector x in R^n a vector T(x) in R^m", "flips rows and columns", "None of these");
+                    new SubAnswer("assigns each vector x in R^n a vector T(x) in R^m"),
+                    new SubAnswer("flips rows and columns"),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T1Q2Answers = new ObservableCollection<Answer>();
                 C2T1Q1Answers.Add(answer2at1c2);
                 C2T1Q1Answers.Add(answer2bt1c2);
@@ -124,13 +148,21 @@ namespace mAppQuiz.Facades
 
                 //Answers for Question 3 Test 1 Course 2
                 Answer answer3at1c2 = new Answer("Basis", "Define this term farther.",
-                    "the pivot columns of A form a basis for A's column space", "A transformation that assigns a vector y in R^m for each x in R^n", "None of these");
+                    new SubAnswer("the pivot columns of A form a basis for A's column space"),
+                    new SubAnswer("A transformation that assigns a vector y in R^m for each x in R^n"),
+                    new SubAnswer("None of these"));
                 Answer answer3bt1c2 = new Answer("One-to-one", "Define this term farther.",
-                    "A transformation that assigns a vector y in R^m for each x in R^n", "Set of all solution to Ax = 0", "None of these");
+                    new SubAnswer("A transformation that assigns a vector y in R^m for each x in R^n"),
+                    new SubAnswer("Set of all solution to Ax = 0"),
+                    new SubAnswer("None of these"));
                 Answer answer3ct1c2 = new Answer("Null space", "Define this term farther.",
-                    "Set of all solution to Ax = 0", "Set of all the linear combinations of the columns of A", "None of these");
+                    new SubAnswer("Set of all solution to Ax = 0"),
+                    new SubAnswer("Set of all the linear combinations of the columns of A"),
+                    new SubAnswer("None of these"));
                 Answer answer3dt1c2 = new Answer("Column space", "Define this term farther.",
-                    "Set of all solution to Ax = 0", "Set of all the linear combinations of the columns of A", "None of these");
+                    new SubAnswer("Set of all solution to Ax = 0"),
+                    new SubAnswer("Set of all the linear combinations of the columns of A"),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T1Q3Answers = new ObservableCollection<Answer>();
                 C2T1Q1Answers.Add(answer2at1c2);
                 C2T1Q1Answers.Add(answer2bt1c2);
@@ -152,13 +184,21 @@ namespace mAppQuiz.Facades
                  * Answers for Question 1 Test 2 Course 2 (Linear Algebra)
                  */
                 Answer answer1at2c2 = new Answer("Dimension", "Define this term farther.",
-                    "the zero subspace's dimension is 0", "The dimension of the column space", "None of these");
+                    new SubAnswer("the zero subspace's dimension is 0"),
+                    new SubAnswer("The dimension of the column space"),
+                    new SubAnswer("None of these"));
                 Answer answer1bt2c2 = new Answer("Onto", "Define this term farther.",
-                    "the zero subspace's dimension is 0", "consistent for any b; pivots in all rows", "None of these");
+                    new SubAnswer("the zero subspace's dimension is 0"),
+                    new SubAnswer("consistent for any b; pivots in all rows"),
+                    new SubAnswer("None of these"));
                 Answer answer1ct2c2 = new Answer("Rank", "Define this term farther.",
-                    "The dimension of the column space", "Set of all solution to Ax = 0", "None of these");
+                    new SubAnswer("The dimension of the column space"),
+                    new SubAnswer("Set of all solution to Ax = 0"),
+                    new SubAnswer("None of these"));
                 Answer answer1dt2c2 = new Answer("Null Space", "Define this term farther.",
-                    "Set of all solution to Ax = 0", "The dimension of the column space", "None of these");
+                    new SubAnswer("Set of all solution to Ax = 0"),
+                    new SubAnswer("The dimension of the column space"),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T2Q1Answers = new ObservableCollection<Answer>();
                 C2T1Q1Answers.Add(answer1at2c2);
                 C2T1Q1Answers.Add(answer1bt2c2);
@@ -169,13 +209,21 @@ namespace mAppQuiz.Facades
 
                 //Answers for Question 2 Test 2 Course 2
                 Answer answer2at2c2 = new Answer("Inner Product", "Define this term farther.",
-                    "if U . V = 0, u and v are orthogonal", "x = Cx + d", "None of these");
+                    new SubAnswer("if U . V = 0, u and v are orthogonal"),
+                    new SubAnswer("x = Cx + d"),
+                    new SubAnswer("None of these"));
                 Answer answer2bt2c2 = new Answer("Leontief input-output model", "Define this term farther.",
-                    "Leftmost non-zero entry in a non-zero row", "x = Cx + d", "None of these");
+                    new SubAnswer("Leftmost non-zero entry in a non-zero row"),
+                    new SubAnswer("x = Cx + d"),
+                    new SubAnswer("None of these"));
                 Answer answer2ct2c2 = new Answer("leading entry", "Define this term farther.",
-                    "Leftmost non-zero entry in a non-zero row", "Has no solution", "None of these");
+                    new SubAnswer("Leftmost non-zero entry in a non-zero row"),
+                    new SubAnswer("Has no solution"),
+                    new SubAnswer("None of these"));
                 Answer answer2dt2c2 = new Answer("inconsistent system", "Define this term farther.",
-                    "x = Cx + d", "Has no solution", "None of these");
+                    new SubAnswer("x = Cx + d"),
+                    new SubAnswer("Has no solution"),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T2Q2Answers = new ObservableCollection<Answer>();
                 C2T1Q1Answers.Add(answer2at2c2);
                 C2T1Q1Answers.Add(answer2bt2c2);
@@ -186,13 +234,21 @@ namespace mAppQuiz.Facades
 
                 //Answers for Question 3 Test 2 Course 2
                 Answer answer3at2c2 = new Answer("Dependent", "Define this term farther.",
-                    "if there are more vectors than there are entries", "If only the trivial solution exists for a linear equation", "None of these");
+                    new SubAnswer("if there are more vectors than there are entries"),
+                    new SubAnswer("If only the trivial solution exists for a linear equation"),
+                    new SubAnswer("None of these"));
                 Answer answer3bt2c2 = new Answer("Independent", "Define this term farther.",
-                    "If only the trivial solution exists for a linear equation", "flips rows and columns", "None of these");
+                    new SubAnswer("If only the trivial solution exists for a linear equation"),
+                    new SubAnswer("flips rows and columns"),
+                    new SubAnswer("None of these"));
                 Answer answer3ct2c2 = new Answer("Transposition", "Define this term farther.",
-                    "assigns each vector x in R^n a vector T(x) in R^m", "flips rows and columns", "None of these");
+                    new SubAnswer("assigns each vector x in R^n a vector T(x) in R^m"),
+                    new SubAnswer("flips rows and columns"),
+                    new SubAnswer("None of these"));
                 Answer answer3dt2c2 = new Answer("Transformation", "Define this term farther.",
-                    "assigns each vector x in R^n a vector T(x) in R^m", "flips rows and columns", "None of these");
+                    new SubAnswer("assigns each vector x in R^n a vector T(x) in R^m"),
+                    new SubAnswer("flips rows and columns"),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T2Q3Answers = new ObservableCollection<Answer>();
                 C2T1Q1Answers.Add(answer2at2c2);
                 C2T1Q1Answers.Add(answer2bt2c2);
@@ -224,13 +280,21 @@ namespace mAppQuiz.Facades
                  * Contains:    1   test    with    3   questions
                  */
                 Answer answer1at1c3 = new Answer("Casting", "Define this term farther.",
-                    "Referred to as type conversion.", "Logical expression determined to be true or false - if true execution continues.", "None of these");
+                    new SubAnswer("Referred to as type conversion."),
+                    new SubAnswer("Logical expression determined to be true or false - if true execution continues."),
+                    new SubAnswer("None of these"));
                 Answer answer1bt1c3 = new Answer("Condition", "Define this term farther.",
-                    "Logical expression determined to be true or false - if true execution continues.", "Allows a program to proceed in a non-sequential matter.", "None of these");
+                    new SubAnswer("Logical expression determined to be true or false - if true execution continues."),
+                    new SubAnswer("Allows a program to proceed in a non-sequential matter."),
+                    new SubAnswer("None of these"));
                 Answer answer1ct1c3 = new Answer("Control Statement", "Define this term farther.",
-                    "Allows a program to proceed in a non-sequential matter.", "Data that lies outside the expected limits.", "None of these");
+                    new SubAnswer("Allows a program to proceed in a non-sequential matter."),
+                    new SubAnswer("Data that lies outside the expected limits."),
+                    new SubAnswer("None of these"));
                 Answer answer1dt1c3 = new Answer("Encapsulation", "Define this term farther.",
-                    "Allows a program to proceed in a non-sequential matter.", "Is used to protect (hide) data or methods which prevents access.", "None of these");
+                    new SubAnswer("Allows a program to proceed in a non-sequential matter."),
+                    new SubAnswer("Is used to protect (hide) data or methods which prevents access."),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C3T1Q1Answers = new ObservableCollection<Answer>();
                 C3T1Q1Answers.Add(answer1at1c3);
                 C3T1Q1Answers.Add(answer1bt1c3);
@@ -241,13 +305,21 @@ namespace mAppQuiz.Facades
 
                 //Answers for Question 2 Test 1 Course 3
                 Answer answer2at1c3 = new Answer("Mutator", "Define this term farther.",
-                    "Method that alters the attributes of an object.", "Problem broken down into smaller components.", "None of these");
+                    new SubAnswer("Method that alters the attributes of an object."),
+                    new SubAnswer("Problem broken down into smaller components."),
+                    new SubAnswer("None of these"));
                 Answer answer2bt1c3 = new Answer("Modifiers", "Define this term farther.",
-                    "Consist of public, private, static, final, and abstract", "Method that alters the attributes of an object.", "None of these");
+                    new SubAnswer("Consist of public, private, static, final, and abstract"),
+                    new SubAnswer("Method that alters the attributes of an object."),
+                    new SubAnswer("None of these"));
                 Answer answer2ct1c3 = new Answer("Modularity", "Define this term farther.",
-                    "Method that alters the attributes of an object.", "Problem broken down into smaller components.", "None of these");
+                    new SubAnswer("Method that alters the attributes of an object."),
+                    new SubAnswer("Problem broken down into smaller components."),
+                    new SubAnswer("None of these"));
                 Answer answer2dt1c3 = new Answer("Nesting", "Define this term farther.",
-                    "Placing one control statements inside another.", "Consist of public, private, static, final, and abstract", "None of these");
+                    new SubAnswer("Placing one control statements inside another."),
+                    new SubAnswer("Consist of public, private, static, final, and abstract"),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C3T1Q2Answers = new ObservableCollection<Answer>();
                 C3T1Q1Answers.Add(answer2at1c3);
                 C3T1Q1Answers.Add(answer2bt1c3);
@@ -258,13 +330,21 @@ namespace mAppQuiz.Facades
 
                 //Answers for Question 3 Test 1 Course 3
                 Answer answer3at1c3 = new Answer("Tree", "Define this term farther.",
-                    "Nodes have max of 2 sub-nodes.", "Data structure that accesses data in a First In - First Out method", "None of these");
+                    new SubAnswer("Nodes have max of 2 sub-nodes."),
+                    new SubAnswer("Data structure that accesses data in a First In - First Out method"),
+                    new SubAnswer("None of these"));
                 Answer answer3bt1c3 = new Answer("Queue", "Define this term farther.",
-                    "Data structure that accesses data in a First In - First Out method", "Nodes have max of 2 sub-nodes.", "None of these");
+                    new SubAnswer("Data structure that accesses data in a First In - First Out method"),
+                    new SubAnswer("Nodes have max of 2 sub-nodes."),
+                    new SubAnswer("None of these"));
                 Answer answer3ct1c3 = new Answer("Array", "Define this term farther.",
-                    "Type of object used to store groups of similar elements.", "Nodes have max of 2 sub-nodes.", "None of these");
+                    new SubAnswer("Type of object used to store groups of similar elements."),
+                    new SubAnswer("Nodes have max of 2 sub-nodes."),
+                    new SubAnswer("None of these"));
                 Answer answer3dt1c3 = new Answer("Buffer", "Define this term farther.",
-                    "Data structure that accesses data in a First In - First Out method", "Temporary storage location of limited size.", "None of these");
+                    new SubAnswer("Data structure that accesses data in a First In - First Out method"),
+                    new SubAnswer("Temporary storage location of limited size."),
+                    new SubAnswer("None of these"));
                 ObservableCollection<Answer> C3T1Q3Answers = new ObservableCollection<Answer>();
                 C3T1Q1Answers.Add(answer2at1c3);
                 C3T1Q1Answers.Add(answer2bt1c3);
