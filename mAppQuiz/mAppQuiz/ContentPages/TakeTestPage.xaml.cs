@@ -14,20 +14,24 @@ namespace mAppQuiz.ContentPages
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TakeTestPage : ContentPage
 	{
-        ListView Questions { get { return questions; } }
+        private ListView Questions { get { return questions; } }
+        private ObservableCollection<Question> choices;
 		public TakeTestPage (Test testQuestions)
 		{
 			InitializeComponent ();
             this.BindingContext = testQuestions;
-            Questions.ItemsSource = testQuestions.Questions;
-            Questions.ItemSelected += AnswerSelected;
+            choices = testQuestions.Questions;
+            Questions.ItemsSource = choices;
+            Questions.ItemSelected += QuestionSelected;
             System.Diagnostics.Debug.WriteLine(testQuestions.Questions.First().QPrompt);
 		}
 
-        private async void AnswerSelected(object sender, SelectedItemChangedEventArgs e)
+        private async void QuestionSelected(object sender, EventArgs e)
         {
-            Page tierTwoQuestionPage = (Page)new TierTwoQuestionPage();
-            await Navigation.PushAsync(tierTwoQuestionPage);
+            Question select = ((Question)((Button)sender).CommandParameter);
+            System.Diagnostics.Debug.WriteLine(select.QPrompt);
+            Page tierOneQuestionPage = (Page)new TierOneQuestionPage(select.QPrompt, select.Answers);
+            await Navigation.PushAsync(tierOneQuestionPage);
         }
     }
 }

@@ -15,13 +15,13 @@ namespace mAppQuiz.Facades
             //This is for testing purposes until we get our database running
             if (input == "test")
             {
-                Answer exampleAnswer0 = new Answer("example Tier1 answer A", 
+                Answer exampleAnswer0 = new Answer("example Tier1 answer A", "A",
                     new SubAnswer("Example Tier2Answer A0"), new SubAnswer("Example Tier2Answer A1"), new SubAnswer("Example Tier2Answer A2"));
-                Answer exampleAnswer1 = new Answer("example Tier1 answer B",
+                Answer exampleAnswer1 = new Answer("example Tier1 answer B", "B",
                     new SubAnswer("Example Tier2Answer B0"), new SubAnswer("Example Tier2Answer B1"), new SubAnswer("Example Tier2Answer B2"));
-                Answer exampleAnswer2 = new Answer("example Tier1 answer C",
+                Answer exampleAnswer2 = new Answer("example Tier1 answer C", "C",
                     new SubAnswer("Example Tier2Answer C0"), new SubAnswer("Example Tier2Answer C1"), new SubAnswer("Example Tier2Answer C2"));
-                Answer exampleAnswer3 = new Answer("example Tier1 answer D",
+                Answer exampleAnswer3 = new Answer("example Tier1 answer D", "D",
                     new SubAnswer("Example Tier2Answer D0"), new SubAnswer("Example Tier2Answer D1"), new SubAnswer("Example Tier2Answer D2"));
                 ObservableCollection<Answer> T1Q1Answers = new ObservableCollection<Answer>();
                 T1Q1Answers.Add(exampleAnswer0);
