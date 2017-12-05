@@ -45,10 +45,10 @@ namespace mAppQuiz.Facades
                 Answer answer2dt1c1 = new Answer("extension… modification", "Name a pattern that closely follows this principle.",
                     new SubAnswer("Strategy"), new SubAnswer("Decorator"), new SubAnswer("Memento"));
                 ObservableCollection<Answer> C1T1Q2Answers = new ObservableCollection<Answer>();
-                C1T1Q1Answers.Add(answer2at1c1);
-                C1T1Q1Answers.Add(answer2bt1c1);
-                C1T1Q1Answers.Add(answer2ct1c1);
-                C1T1Q1Answers.Add(answer2dt1c1);
+                C1T1Q2Answers.Add(answer2at1c1);
+                C1T1Q2Answers.Add(answer2bt1c1);
+                C1T1Q2Answers.Add(answer2ct1c1);
+                C1T1Q2Answers.Add(answer2dt1c1);
                 int C1T1Q2TIER1ANSWER = 3;
                 int C1T1Q2TIER2ANSWER = 1;
 
@@ -70,10 +70,10 @@ namespace mAppQuiz.Facades
                     new SubAnswer("Ensure that only one instance of a class is created"),
                     new SubAnswer("None of these"));
                 ObservableCollection<Answer> C1T1Q3Answers = new ObservableCollection<Answer>();
-                C1T1Q1Answers.Add(answer2at1c1);
-                C1T1Q1Answers.Add(answer2bt1c1);
-                C1T1Q1Answers.Add(answer2ct1c1);
-                C1T1Q1Answers.Add(answer2dt1c1);
+                C1T1Q3Answers.Add(answer3at1c1);
+                C1T1Q3Answers.Add(answer3bt1c1);
+                C1T1Q3Answers.Add(answer3ct1c1);
+                C1T1Q3Answers.Add(answer3dt1c1);
                 int C1T1Q3TIER1ANSWER = 2;
                 int C1T1Q3TIER2ANSWER = 0;
 
@@ -139,10 +139,10 @@ namespace mAppQuiz.Facades
                     new SubAnswer("flips rows and columns"),
                     new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T1Q2Answers = new ObservableCollection<Answer>();
-                C2T1Q1Answers.Add(answer2at1c2);
-                C2T1Q1Answers.Add(answer2bt1c2);
-                C2T1Q1Answers.Add(answer2ct1c2);
-                C2T1Q1Answers.Add(answer2dt1c2);
+                C2T1Q2Answers.Add(answer2at1c2);
+                C2T1Q2Answers.Add(answer2bt1c2);
+                C2T1Q2Answers.Add(answer2ct1c2);
+                C2T1Q2Answers.Add(answer2dt1c2);
                 int C2T1Q2TIER1ANSWER = 0;
                 int C2T1Q2TIER2ANSWER = 0;
 
@@ -164,10 +164,10 @@ namespace mAppQuiz.Facades
                     new SubAnswer("Set of all the linear combinations of the columns of A"),
                     new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T1Q3Answers = new ObservableCollection<Answer>();
-                C2T1Q1Answers.Add(answer2at1c2);
-                C2T1Q1Answers.Add(answer2bt1c2);
-                C2T1Q1Answers.Add(answer2ct1c2);
-                C2T1Q1Answers.Add(answer2dt1c2);
+                C2T1Q3Answers.Add(answer3at1c2);
+                C2T1Q3Answers.Add(answer3bt1c2);
+                C2T1Q3Answers.Add(answer3ct1c2);
+                C2T1Q3Answers.Add(answer3dt1c2);
                 int C2T1Q3TIER1ANSWER = 0;
                 int C2T1Q3TIER2ANSWER = 0;
 
@@ -200,10 +200,10 @@ namespace mAppQuiz.Facades
                     new SubAnswer("The dimension of the column space"),
                     new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T2Q1Answers = new ObservableCollection<Answer>();
-                C2T1Q1Answers.Add(answer1at2c2);
-                C2T1Q1Answers.Add(answer1bt2c2);
-                C2T1Q1Answers.Add(answer1ct2c2);
-                C2T1Q1Answers.Add(answer1dt2c2);
+                C2T2Q1Answers.Add(answer1at2c2);
+                C2T2Q1Answers.Add(answer1bt2c2);
+                C2T2Q1Answers.Add(answer1ct2c2);
+                C2T2Q1Answers.Add(answer1dt2c2);
                 int C2T2Q1TIER1ANSWER = 0;
                 int C2T2Q1TIER2ANSWER = 0;
 
@@ -225,10 +225,10 @@ namespace mAppQuiz.Facades
                     new SubAnswer("Has no solution"),
                     new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T2Q2Answers = new ObservableCollection<Answer>();
-                C2T1Q1Answers.Add(answer2at2c2);
-                C2T1Q1Answers.Add(answer2bt2c2);
-                C2T1Q1Answers.Add(answer2ct2c2);
-                C2T1Q1Answers.Add(answer2dt2c2);
+                C2T2Q2Answers.Add(answer2at2c2);
+                C2T2Q2Answers.Add(answer2bt2c2);
+                C2T2Q2Answers.Add(answer2ct2c2);
+                C2T2Q2Answers.Add(answer2dt2c2);
                 int C2T2Q2TIER1ANSWER = 0;
                 int C2T2Q2TIER2ANSWER = 0;
 
@@ -250,10 +250,10 @@ namespace mAppQuiz.Facades
                     new SubAnswer("flips rows and columns"),
                     new SubAnswer("None of these"));
                 ObservableCollection<Answer> C2T2Q3Answers = new ObservableCollection<Answer>();
-                C2T1Q1Answers.Add(answer2at2c2);
-                C2T1Q1Answers.Add(answer2bt2c2);
-                C2T1Q1Answers.Add(answer2ct2c2);
-                C2T1Q1Answers.Add(answer2dt2c2);
+                C2T2Q3Answers.Add(answer3at2c2);
+                C2T2Q3Answers.Add(answer3bt2c2);
+                C2T2Q3Answers.Add(answer3ct2c2);
+                C2T2Q3Answers.Add(answer3dt2c2);
                 int C2T2Q3TIER1ANSWER = 0;
                 int C2T2Q3TIER2ANSWER = 0;
 
@@ -321,10 +321,10 @@ namespace mAppQuiz.Facades
                     new SubAnswer("Consist of public, private, static, final, and abstract"),
                     new SubAnswer("None of these"));
                 ObservableCollection<Answer> C3T1Q2Answers = new ObservableCollection<Answer>();
-                C3T1Q1Answers.Add(answer2at1c3);
-                C3T1Q1Answers.Add(answer2bt1c3);
-                C3T1Q1Answers.Add(answer2ct1c3);
-                C3T1Q1Answers.Add(answer2dt1c3);
+                C3T1Q2Answers.Add(answer2at1c3);
+                C3T1Q2Answers.Add(answer2bt1c3);
+                C3T1Q2Answers.Add(answer2ct1c3);
+                C3T1Q2Answers.Add(answer2dt1c3);
                 int C3T1Q2TIER1ANSWER = 1;
                 int C3T1Q2TIER2ANSWER = 0;
 
@@ -346,10 +346,10 @@ namespace mAppQuiz.Facades
                     new SubAnswer("Temporary storage location of limited size."),
                     new SubAnswer("None of these"));
                 ObservableCollection<Answer> C3T1Q3Answers = new ObservableCollection<Answer>();
-                C3T1Q1Answers.Add(answer2at1c3);
-                C3T1Q1Answers.Add(answer2bt1c3);
-                C3T1Q1Answers.Add(answer2ct1c3);
-                C3T1Q1Answers.Add(answer2dt1c3);
+                C3T1Q3Answers.Add(answer3at1c3);
+                C3T1Q3Answers.Add(answer3bt1c3);
+                C3T1Q3Answers.Add(answer3ct1c3);
+                C3T1Q3Answers.Add(answer3dt1c3);
                 int C3T1Q3TIER1ANSWER = 0;
                 int C3T1Q3TIER2ANSWER = 0;
 
