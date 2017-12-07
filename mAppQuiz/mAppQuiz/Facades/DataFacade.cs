@@ -97,19 +97,19 @@ namespace mAppQuiz.Facades
                  * Answers for Question 1 Test 1 Course 2 (Linear Algebra)
                  * Contains:    2   test    with    3   questions   each
                  */
-                Answer answer1at1c2 = new Answer("Orthogonal", "Define this term farther.",
+                Answer answer1at1c2 = new Answer("Orthogonal", "Define this term further.",
                     new SubAnswer("W' is a subspace of R^n"),
                     new SubAnswer("The number of vectors in any basis of H; the zero subspace's dimension is 0"),
                     new SubAnswer("None of these"));
-                Answer answer1bt1c2 = new Answer("Onto", "Define this term farther.",
+                Answer answer1bt1c2 = new Answer("Onto", "Define this term further.",
                     new SubAnswer("W' is a subspace of R^n"),
                     new SubAnswer("consistent for any b; pivots in all rows"),
                     new SubAnswer("None of these"));
-                Answer answer1ct1c2 = new Answer("Rank", "Define this term farther.",
+                Answer answer1ct1c2 = new Answer("Rank", "Define this term further.",
                     new SubAnswer("consistent for any b; pivots in all rows"),
                     new SubAnswer("The dimension of the column space"),
                     new SubAnswer("None of these"));
-                Answer answer1dt1c2 = new Answer("Dimension", "Define this term farther.",
+                Answer answer1dt1c2 = new Answer("Dimension", "Define this term further.",
                     new SubAnswer("The number of vectors in any basis of H; the zero subspace's dimension is 0"),
                     new SubAnswer("The dimension of the column space"),
                     new SubAnswer("None of these"));
@@ -122,19 +122,19 @@ namespace mAppQuiz.Facades
                 int C2T1Q1TIER2ANSWER = 0;
 
                 //Answers for Question 2 Test 1 Course 2
-                Answer answer2at1c2 = new Answer("Homogeneous", "Define this term farther.",
+                Answer answer2at1c2 = new Answer("Homogeneous", "Define this term further.",
                     new SubAnswer("the x = 0 solution is a TRIVIAL solution"),
                     new SubAnswer("flips rows and columns"),
                     new SubAnswer("None of these"));
-                Answer answer2bt1c2 = new Answer("Independent", "Define this term farther.",
+                Answer answer2bt1c2 = new Answer("Independent", "Define this term further.",
                     new SubAnswer("the columns of A are independent if only the trivial solution exists"),
                     new SubAnswer("If non-zero weights that satisfy the equation exist"),
                     new SubAnswer("None of these"));
-                Answer answer2ct1c2 = new Answer("Dependent", "Define this term farther.",
+                Answer answer2ct1c2 = new Answer("Dependent", "Define this term further.",
                     new SubAnswer("assigns each vector x in R^n a vector T(x) in R^m"),
                     new SubAnswer("If non-zero weights that satisfy the equation exist"),
                     new SubAnswer("None of these"));
-                Answer answer2dt1c2 = new Answer("Transformation", "Define this term farther.",
+                Answer answer2dt1c2 = new Answer("Transformation", "Define this term further.",
                     new SubAnswer("assigns each vector x in R^n a vector T(x) in R^m"),
                     new SubAnswer("flips rows and columns"),
                     new SubAnswer("None of these"));
@@ -147,19 +147,19 @@ namespace mAppQuiz.Facades
                 int C2T1Q2TIER2ANSWER = 0;
 
                 //Answers for Question 3 Test 1 Course 2
-                Answer answer3at1c2 = new Answer("Basis", "Define this term farther.",
+                Answer answer3at1c2 = new Answer("Basis", "Define this term further.",
                     new SubAnswer("the pivot columns of A form a basis for A's column space"),
                     new SubAnswer("A transformation that assigns a vector y in R^m for each x in R^n"),
                     new SubAnswer("None of these"));
-                Answer answer3bt1c2 = new Answer("One-to-one", "Define this term farther.",
+                Answer answer3bt1c2 = new Answer("One-to-one", "Define this term further.",
                     new SubAnswer("A transformation that assigns a vector y in R^m for each x in R^n"),
                     new SubAnswer("Set of all solution to Ax = 0"),
                     new SubAnswer("None of these"));
-                Answer answer3ct1c2 = new Answer("Null space", "Define this term farther.",
+                Answer answer3ct1c2 = new Answer("Null space", "Define this term further.",
                     new SubAnswer("Set of all solution to Ax = 0"),
                     new SubAnswer("Set of all the linear combinations of the columns of A"),
                     new SubAnswer("None of these"));
-                Answer answer3dt1c2 = new Answer("Column space", "Define this term farther.",
+                Answer answer3dt1c2 = new Answer("Column space", "Define this term further.",
                     new SubAnswer("Set of all solution to Ax = 0"),
                     new SubAnswer("Set of all the linear combinations of the columns of A"),
                     new SubAnswer("None of these"));
@@ -183,19 +183,19 @@ namespace mAppQuiz.Facades
                 /**
                  * Answers for Question 1 Test 2 Course 2 (Linear Algebra)
                  */
-                Answer answer1at2c2 = new Answer("Dimension", "Define this term farther.",
+                Answer answer1at2c2 = new Answer("Dimension", "Define this term further.",
                     new SubAnswer("the zero subspace's dimension is 0"),
                     new SubAnswer("The dimension of the column space"),
                     new SubAnswer("None of these"));
-                Answer answer1bt2c2 = new Answer("Onto", "Define this term farther.",
+                Answer answer1bt2c2 = new Answer("Onto", "Define this term further.",
                     new SubAnswer("the zero subspace's dimension is 0"),
                     new SubAnswer("consistent for any b; pivots in all rows"),
                     new SubAnswer("None of these"));
-                Answer answer1ct2c2 = new Answer("Rank", "Define this term farther.",
+                Answer answer1ct2c2 = new Answer("Rank", "Define this term further.",
                     new SubAnswer("The dimension of the column space"),
                     new SubAnswer("Set of all solution to Ax = 0"),
                     new SubAnswer("None of these"));
-                Answer answer1dt2c2 = new Answer("Null Space", "Define this term farther.",
+                Answer answer1dt2c2 = new Answer("Null Space", "Define this term further.",
                     new SubAnswer("Set of all solution to Ax = 0"),
                     new SubAnswer("The dimension of the column space"),
                     new SubAnswer("None of these"));
@@ -208,19 +208,19 @@ namespace mAppQuiz.Facades
                 int C2T2Q1TIER2ANSWER = 0;
 
                 //Answers for Question 2 Test 2 Course 2
-                Answer answer2at2c2 = new Answer("Inner Product", "Define this term farther.",
+                Answer answer2at2c2 = new Answer("Inner Product", "Define this term further.",
                     new SubAnswer("if U . V = 0, u and v are orthogonal"),
                     new SubAnswer("x = Cx + d"),
                     new SubAnswer("None of these"));
-                Answer answer2bt2c2 = new Answer("Leontief input-output model", "Define this term farther.",
+                Answer answer2bt2c2 = new Answer("Leontief input-output model", "Define this term further.",
                     new SubAnswer("Leftmost non-zero entry in a non-zero row"),
                     new SubAnswer("x = Cx + d"),
                     new SubAnswer("None of these"));
-                Answer answer2ct2c2 = new Answer("leading entry", "Define this term farther.",
+                Answer answer2ct2c2 = new Answer("leading entry", "Define this term further.",
                     new SubAnswer("Leftmost non-zero entry in a non-zero row"),
                     new SubAnswer("Has no solution"),
                     new SubAnswer("None of these"));
-                Answer answer2dt2c2 = new Answer("inconsistent system", "Define this term farther.",
+                Answer answer2dt2c2 = new Answer("inconsistent system", "Define this term further.",
                     new SubAnswer("x = Cx + d"),
                     new SubAnswer("Has no solution"),
                     new SubAnswer("None of these"));
@@ -233,19 +233,19 @@ namespace mAppQuiz.Facades
                 int C2T2Q2TIER2ANSWER = 0;
 
                 //Answers for Question 3 Test 2 Course 2
-                Answer answer3at2c2 = new Answer("Dependent", "Define this term farther.",
+                Answer answer3at2c2 = new Answer("Dependent", "Define this term further.",
                     new SubAnswer("if there are more vectors than there are entries"),
                     new SubAnswer("If only the trivial solution exists for a linear equation"),
                     new SubAnswer("None of these"));
-                Answer answer3bt2c2 = new Answer("Independent", "Define this term farther.",
+                Answer answer3bt2c2 = new Answer("Independent", "Define this term further.",
                     new SubAnswer("If only the trivial solution exists for a linear equation"),
                     new SubAnswer("flips rows and columns"),
                     new SubAnswer("None of these"));
-                Answer answer3ct2c2 = new Answer("Transposition", "Define this term farther.",
+                Answer answer3ct2c2 = new Answer("Transposition", "Define this term further.",
                     new SubAnswer("assigns each vector x in R^n a vector T(x) in R^m"),
                     new SubAnswer("flips rows and columns"),
                     new SubAnswer("None of these"));
-                Answer answer3dt2c2 = new Answer("Transformation", "Define this term farther.",
+                Answer answer3dt2c2 = new Answer("Transformation", "Define this term further.",
                     new SubAnswer("assigns each vector x in R^n a vector T(x) in R^m"),
                     new SubAnswer("flips rows and columns"),
                     new SubAnswer("None of these"));
@@ -279,19 +279,19 @@ namespace mAppQuiz.Facades
                  * Answers for Question 1 Test 1 Course 3 (Comp Sci)
                  * Contains:    1   test    with    3   questions
                  */
-                Answer answer1at1c3 = new Answer("Casting", "Define this term farther.",
+                Answer answer1at1c3 = new Answer("Casting", "Define this term further.",
                     new SubAnswer("Referred to as type conversion."),
                     new SubAnswer("Logical expression determined to be true or false - if true execution continues."),
                     new SubAnswer("None of these"));
-                Answer answer1bt1c3 = new Answer("Condition", "Define this term farther.",
+                Answer answer1bt1c3 = new Answer("Condition", "Define this term further.",
                     new SubAnswer("Logical expression determined to be true or false - if true execution continues."),
                     new SubAnswer("Allows a program to proceed in a non-sequential matter."),
                     new SubAnswer("None of these"));
-                Answer answer1ct1c3 = new Answer("Control Statement", "Define this term farther.",
+                Answer answer1ct1c3 = new Answer("Control Statement", "Define this term further.",
                     new SubAnswer("Allows a program to proceed in a non-sequential matter."),
                     new SubAnswer("Data that lies outside the expected limits."),
                     new SubAnswer("None of these"));
-                Answer answer1dt1c3 = new Answer("Encapsulation", "Define this term farther.",
+                Answer answer1dt1c3 = new Answer("Encapsulation", "Define this term further.",
                     new SubAnswer("Allows a program to proceed in a non-sequential matter."),
                     new SubAnswer("Is used to protect (hide) data or methods which prevents access."),
                     new SubAnswer("None of these"));
@@ -304,19 +304,19 @@ namespace mAppQuiz.Facades
                 int C3T1Q1TIER2ANSWER = 0;
 
                 //Answers for Question 2 Test 1 Course 3
-                Answer answer2at1c3 = new Answer("Mutator", "Define this term farther.",
+                Answer answer2at1c3 = new Answer("Mutator", "Define this term further.",
                     new SubAnswer("Method that alters the attributes of an object."),
                     new SubAnswer("Problem broken down into smaller components."),
                     new SubAnswer("None of these"));
-                Answer answer2bt1c3 = new Answer("Modifiers", "Define this term farther.",
+                Answer answer2bt1c3 = new Answer("Modifiers", "Define this term further.",
                     new SubAnswer("Consist of public, private, static, final, and abstract"),
                     new SubAnswer("Method that alters the attributes of an object."),
                     new SubAnswer("None of these"));
-                Answer answer2ct1c3 = new Answer("Modularity", "Define this term farther.",
+                Answer answer2ct1c3 = new Answer("Modularity", "Define this term further.",
                     new SubAnswer("Method that alters the attributes of an object."),
                     new SubAnswer("Problem broken down into smaller components."),
                     new SubAnswer("None of these"));
-                Answer answer2dt1c3 = new Answer("Nesting", "Define this term farther.",
+                Answer answer2dt1c3 = new Answer("Nesting", "Define this term further.",
                     new SubAnswer("Placing one control statements inside another."),
                     new SubAnswer("Consist of public, private, static, final, and abstract"),
                     new SubAnswer("None of these"));
@@ -329,19 +329,19 @@ namespace mAppQuiz.Facades
                 int C3T1Q2TIER2ANSWER = 0;
 
                 //Answers for Question 3 Test 1 Course 3
-                Answer answer3at1c3 = new Answer("Tree", "Define this term farther.",
+                Answer answer3at1c3 = new Answer("Tree", "Define this term further.",
                     new SubAnswer("Nodes have max of 2 sub-nodes."),
                     new SubAnswer("Data structure that accesses data in a First In - First Out method"),
                     new SubAnswer("None of these"));
-                Answer answer3bt1c3 = new Answer("Queue", "Define this term farther.",
+                Answer answer3bt1c3 = new Answer("Queue", "Define this term further.",
                     new SubAnswer("Data structure that accesses data in a First In - First Out method"),
                     new SubAnswer("Nodes have max of 2 sub-nodes."),
                     new SubAnswer("None of these"));
-                Answer answer3ct1c3 = new Answer("Array", "Define this term farther.",
+                Answer answer3ct1c3 = new Answer("Array", "Define this term further.",
                     new SubAnswer("Type of object used to store groups of similar elements."),
                     new SubAnswer("Nodes have max of 2 sub-nodes."),
                     new SubAnswer("None of these"));
-                Answer answer3dt1c3 = new Answer("Buffer", "Define this term farther.",
+                Answer answer3dt1c3 = new Answer("Buffer", "Define this term further.",
                     new SubAnswer("Data structure that accesses data in a First In - First Out method"),
                     new SubAnswer("Temporary storage location of limited size."),
                     new SubAnswer("None of these"));
