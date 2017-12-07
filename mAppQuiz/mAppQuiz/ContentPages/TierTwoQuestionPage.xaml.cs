@@ -28,6 +28,7 @@ namespace mAppQuiz.ContentPages
         private async void SubSelected(object sender, EventArgs e)
         {
             //here is where you would use a facade to send off subanswer selected information
+            this.Navigation.RemovePage(this.Navigation.NavigationStack[this.Navigation.NavigationStack.Count - 2]);
             await Navigation.PopAsync();
         }
     }
